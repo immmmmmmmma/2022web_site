@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- jquery 파일 / bxsilde 소스(bxsilde.js / bxsilde.css 파일) -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- jquery-3.1과 jquery.bxslider의 위치가 바뀌면 안된다 -->
+
+
     <style>
         /* reset */
         *{margin: 0;padding: 0;}
@@ -31,7 +39,7 @@
         }
 
         /* visual */
-        .visual_wrap{height:643px;background-image: url(images/210616_bg.jpg);}
+        /* .visual_wrap{height:643px;background-image: url(images/210616_bg.jpg);} */
         .visual{
             width: 1440px;
             height: 643px;
@@ -109,6 +117,12 @@
         p{color: #7c7c7c;}
 
     </style>
+    <script>
+        $(document).ready(function(){
+            $(".slider").bxSlider()
+            //  /$=jQuery/ 
+        })
+    </script>
 
 <body>
     <header class="header_wrap clearfix">
@@ -124,9 +138,14 @@
     </header>
 
     <div class="visual_wrap">
-        <div class="visual">
+        <!-- <div class="visual">
             <h2>중소중소벤처기업진흥공단<br>온라인수출지원사업 공식 수행기관 선정</h2>
-        </div>
+        </div> -->
+        <ul class="slider">
+            <li><img src="images/210616_bg.jpg" alt=""></li>
+            <li><img src="images/210616_bg01.jpg" alt=""></li>
+            <li><img src="images/210616_bg.jpg" alt=""></li>
+        </ul>
     </div>
 
     <section class="sec_1st">
@@ -192,11 +211,11 @@
             <div class="right">
                 <ul class="claerfix">
                     <li><img src="images/banner01.png" alt=""></li>
-                    <li><img src="images/banner01.png" alt=""></li>
-                    <li><img src="images/banner01.png" alt=""></li>
-                    <li><img src="images/banner01.png" alt=""></li>
-                    <!-- 각각에 <li></li>값 씌워주는거 주의하기 -->
                     <li><img src="images/banner02.png" alt=""></li>
+                    <li><img src="images/banner03.png" alt=""></li>
+                    <li><img src="images/banner04.png" alt=""></li>
+                    <!-- 각각에 <li></li>값 씌워주는거 주의하기 -->
+                    <li><img src="images/banner05.png" alt=""></li>
                 </ul>
             </div>
         </section>
@@ -213,9 +232,6 @@
             </div>
         </section>
     </div>
-
-
-
 </body>
 
 </html>
