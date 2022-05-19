@@ -32,6 +32,8 @@
         /* header */
         .header_wrap{width: 1440px;margin: 0 auto;}
         .header_wrap>h1{width: 168px;line-height: 60px;float: left;}
+        .header_wrap img{display:initial;}
+        /* 위의 reset에서 img에 블럭처리가 되어있기 때문에 initial처리 */
         .navbar{width: 532px;float: right;}
         .navbar>ul>li{float: left;width: 25%;}
         .navbar>ul>li>a{
@@ -116,10 +118,25 @@
         h3{font-size: 22px !important;}
         p{color: #7c7c7c;}
 
+        .bx-wrapper {
+            -moz-box-shadow: 0 0 0 #ccc;
+            -webkit-box-shadow: 0 0 0 #ccc;
+            box-shadow: 0 0 0 #ccc;
+            border: 0 none;
+        }
+
     </style>
     <script>
         $(document).ready(function(){
-            $(".slider").bxSlider()
+            $(".slider").bxSlider({
+                // mode:"fade",
+                // pager:false
+                // controls:false
+                // auto:true
+                // 기본 상태인 horizontla 대신 fade, vertical 등을 사용할 수 있다/ 
+                // false,ture는 문자취급 하지않는다/
+                // 슬라이더의 양옆,아래 컨트롤러를 false를 이용해 지울수 있다/
+            })
             //  /$=jQuery/ 
         })
     </script>
@@ -142,9 +159,8 @@
             <h2>중소중소벤처기업진흥공단<br>온라인수출지원사업 공식 수행기관 선정</h2>
         </div> -->
         <ul class="slider">
-            <li><img src="images/210616_bg.jpg" alt=""></li>
-            <li><img src="images/210616_bg01.jpg" alt=""></li>
-            <li><img src="images/210616_bg.jpg" alt=""></li>
+            <li><img src="images/bg_slide01.jpg" alt=""></li>
+            <li><img src="images/bg_slide02.jpg" alt=""></li>
         </ul>
     </div>
 
