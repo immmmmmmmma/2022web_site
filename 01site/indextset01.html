@@ -6,85 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    /* reset */
-    *{margin: 0;padding: 0;}
-    li{list-style: none;}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    body{font-family: 'Noto Sans KR', sans-serif;}
-    .clearfix:after{content: "";display: block;clear: both;}
+    <style>
+        /* reset */
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        body{font-family:'Noto Sans KR', sans-serif;}
+        .clearfix:after{content:"";display: block;clear: both;}
     
-    /* header */
-.header_wrap{
-    width: 1440px;
-    margin: 0 auto;
-}
-.header_wrap>h1{
-    width: 168px;
-    line-height: 60px;
-    float: left;
-}
-.navbar{
-    width: 532px;
-    float: right;
-}
-.navbar>ul>li{
-    float: left;
-    width: 25%;
-}
-.navbar>ul>li>a{
-    display: block;
-    line-height: 60px;
-    font-size: 15px;
-    text-align: center;
-}
+        /* header */
+        .header_wrap{width: 1440px;margin: 0 auto;}
+        .header_wrap>h1{width: 168px;line-height: 60px;float: left;}
+        .navbar{width: 532px;float: right;}
+        .navbar>ul>li{float: left;width: 25%;}
+        .navbar>ul>li>a{
+            display: block;font-size: 15px;text-align: center;line-height: 60px;
+        }
 
-/* visual */
+        /* visual */
+        .visual_wrap{height: 643px;background-image: url(images/210616_bg.jpg);}
+        .viual{
+            width: 1440px;margin: 0 auto;
+            padding: 230px 0 0 0;
+            height: 643px;}
+        .visual>h2{font-size: 50px;color: #ffffff;}
 
-.visual_wrap{
-    height: 643px;
-    background-image: url(images/210616_bg.jpg);
-}
-.viual{
-    width: 1440px;
-    margin: 0 auto;
-    padding-top: 230px;
-}
-.visual>h2{
-    font-size: 50px;
-    color: #ffffff;
-}
-
-/* section */
-.sec_1st{
-    width: 1440px;
-    margin: 0 auto;
-    
-}
+        /* section */
+        .sec_1st{width: 1440px;margin: 0 auto;}
+        
 
 
-</style>
+    </style>
 
 <body>
     <header class="header_wrap clearfix">
         <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
         <nav class="navbar">
             <ul class="clearfix">
-                <li><a href="#"></a> 아마존 입점</li>
-                <li><a href="#"></a>알리바바 입점</li>
-                <li><a href="#"></a>쇼핑물 제작</li>
-                <li><a href="#"></a>국내몰 운영</li>
+                <li><a href="#">아마존 입점</a></li>
+                <li><a href="#">알리바바 입점</a></li>
+                <li><a href="#">쇼핑물 제작</a></li>
+                <li><a href="#">국내몰 운영</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="visual_wrap">
         <div class="visual">
-            <h2>중소중소벤처기업진흥공단<br>
-                온라인수출지원사업 공식 수행기관 선정
-            </h2>
+            <h2>중소중소벤처기업진흥공단<br>온라인수출지원사업 공식 수행기관 선정</h2>
         </div>
     </div>
 
@@ -113,7 +84,6 @@
                         </p>
                     </div>
                 </div>
-
             </div>
     </section>
 
