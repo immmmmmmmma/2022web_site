@@ -15,6 +15,11 @@
         li{list-style: none;}
         body{font-family:'Noto Sans KR', sans-serif;}
         .clearfix:after{content:"";display: block;clear: both;}
+        img{display: block;}
+        a:link{color:#333;text-decoration:none}
+        a:visited{color:#333}
+        /* a:link,a:visited{color:#333;text-decoration:none} 위의 것들을 한 번에 합쳐서 쓸 수도 있다*/
+        a:hover{color:#333}
     
         /* header */
         .header_wrap{width: 1440px;margin: 0 auto;}
@@ -26,17 +31,82 @@
         }
 
         /* visual */
-        .visual_wrap{height: 643px;background-image: url(images/210616_bg.jpg);}
-        .viual{
-            width: 1440px;margin: 0 auto;
+        .visual_wrap{height:643px;background-image: url(images/210616_bg.jpg);}
+        .visual{
+            width: 1440px;
+            height: 643px;
             padding: 230px 0 0 0;
-            height: 643px;}
+            margin: 0 auto;
+        }
         .visual>h2{font-size: 50px;color: #ffffff;}
 
-        /* section */
-        .sec_1st{width: 1440px;margin: 0 auto;}
+        /* section 1st */
+        .sec_1st{
+            width: 1440px;
+            margin: 0 auto;
+            padding: 120px 0 60px 0;
+        }
+        .sec_1st>h2{
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 50px;
+            color: #333333;
+            line-height: 45px;
+        }
+        .sec_1st>.content{}
+        .sec_1st>.content>div{
+            width: 701px;
+            float: left;
+            margin-right: 38px;
+        }
+        .sec_1st>.content>div:last-child{
+            margin-right: 0;
+        }
+        .sec_1st>.content>.conItem>div{
+            float: left;
+        }
+        .sec_1st>.content>.conItem>div.img{
+            background-color: #f6f6f6;
+            border-radius: 80px;
+            margin-right: 40px;
+        }
         
+        .sec_1st .conItem>div.img>img{display: block;}
+        .sec_1st .conItem>div.textWrap{padding-top: 30px;}
+        .sec_1st .conItem>div.textWrap>h3{font-size:22px;margin-bottom: 10px;}
+        .sec_1st .conItem>div.textWrap>p{font-size:18px;color:#7c7c7c}
 
+        /* sec_2nd */
+        .sec_2nd{width: 1440px;margin: 0 auto;}
+        .sec_2nd>.left{float: left;width: 440px;}
+        .sec_2nd>.right{float: left;width: 1000px;}
+        .sec_2nd>.right li{
+            float: left;margin-right: 16px;margin-bottom: 16px;
+            width: 492px;height: 127px;
+        }
+        .sec_2nd>.right li:nth-child(2),
+        .sec_2nd>.right li:nth-child(4){margin-right: 0;}
+        .sec_2nd>.right li:last-child{width: 100%;margin-bottom: 0;}
+        
+        /* sec_3rd */
+        .sec_3rd{width: 100%;background-image: url(images/bg_ask.jpg);margin: 0 auto;height: 410px;}
+        .sec_3rd>.bg_ask{}
+        .sec_3rd>.bg_ask>h2,
+        .sec_3rd>.bg_ask>p{text-align: center;color: #ffffff;margin-bottom: 30px;}
+        /* .button{
+            background-color:skyblue;padding:20px 50px;display:inline-block;
+            border-radius:30px
+        } */
+
+        /* common */
+        .bg1{background-color: #f6f6f6;}
+        .py50{padding: 50px 0;}
+        /* .py50{padding-top: 50px;padding-bottom: 50px;} 이런식을 pt50 pb50넣어도 된다*/
+        .py80{padding: 80px 0;}
+        .py130{padding: 130px 0;}
+        h2{font-size: 40px !important;}
+        h3{font-size: 22px !important;}
+        p{color: #7c7c7c;}
 
     </style>
 
@@ -60,15 +130,15 @@
     </div>
 
     <section class="sec_1st">
-        <h3>해외 마켓 전문가가<br>
-            수출을 도와드립니다</h3>
+        <h2>해외 마켓 전문가가<br>
+            수출을 도와드립니다</h2>
 
             <div class="content clearfix">
                 
                 <div class="conItem clearfix">
                     <div class="img"><img src="images/logo_amazon.png" alt=""></div>
                     <div class="text_wrap">
-                        <h4>아마존 입점</h4>
+                        <h3>아마존 입점</h3>
                         <p>전 세계 3억명의 아마존 고객을 대상으로<br>
                             고객사의 온라인 스토어를 오픈 및 운영 대행
                         </p>
@@ -78,7 +148,7 @@
                 <div class="conItem clearfix">
                     <div class="img"><img src="images/logo_alibaba.png" alt=""></div>
                     <div class="text_wrap">
-                        <h4>아리바바 입점</h4>
+                        <h3>아리바바 입점</h3>
                         <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>
                             알리바바 입점 및 운영 대행
                         </p>
@@ -86,6 +156,64 @@
                 </div>
             </div>
     </section>
+    <section class="sec_1st">
+        <h2>글로벌 쇼핑몰 제작,<br>
+            국내몰 운영도 가능합니다</h2>
+
+            <div class="content clearfix">
+                
+                <div class="conItem clearfix">
+                    <div class="img"><img src="images/logo_domestic.png" alt=""></div>
+                    <div class="text_wrap">
+                        <h3>쇼핑몰 제작</h3>
+                        <p>전 세계 3억명의 아마존 고객을 대상으로<br>
+                            고객사의 온라인 스토어를 오픈 및 운영 대행
+                        </p>
+                    </div>
+                </div>
+
+                <div class="conItem clearfix">
+                    <div class="img"><img src="images/logo_shoppingmall.png" alt=""></div>
+                    <div class="text_wrap">
+                        <h3>국내몰 운영</h3>
+                        <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>
+                            알리바바 입점 및 운영 대행
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="bg1 py50 py130">
+        <section class="sec_2nd clearfix">
+            <div class="left">
+                <h2>가비아 글로벌이 <br>더 특별한 이유</h3>
+                <!-- h3폰트 크기가 독같아서 같은 이름으로 사용 -->
+            </div>
+            <div class="right">
+                <ul class="claerfix">
+                    <li><img src="images/banner01.png" alt=""></li>
+                    <li><img src="images/banner01.png" alt=""></li>
+                    <li><img src="images/banner01.png" alt=""></li>
+                    <li><img src="images/banner01.png" alt=""></li>
+                    <!-- 각각에 <li></li>값 씌워주는거 주의하기 -->
+                    <li><img src="images/banner02.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="bg2">
+        <section class="sec_3rd">
+            <div class="bg_ask py80">
+                <h2>간단한 궁금증이라도 지금 바로 확인해보세요</h2>
+                <p>가비아CNS의 해외 마켓 전문가가 답변을 드립니다</p>
+                <h2>070-4331-5361</h2>
+                <!-- <div class="button">
+                    상담하기
+                </div> -->
+            </div>
+        </section>
+    </div>
+
 
 
 </body>
