@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- slider -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- reset -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        .header_wrap{
+        }
+        .header{width: 1440px;height: 60px;;margin: 0 auto;position: relative;padding: 0 20px;}
+        .header h1{position: absolute; left: 20px;top:22px;}
+        .header ul{width: 532.4px; position: absolute;right: 20px; top: 22px;}
+        .header li{float: left;width: 25%;}
+        .header li a{display: block;text-align: center;line-height: 22.5px;font-size: 15px;color: #333;}
+
+        /* visual */
+        .visual_wrap{}
+        .visual_wrap img{width: 100%;display: block;margin: 0 auto;}
+        .txt_wrap{position: absolute; top: 120px;left: calc( 50% - 700px );}
+        .insidelogo{display:block;width: 200px;height: 23px;margin-bottom: 38px;}
+        .txt_wrap h2{font-size: 50px;color: #fff;line-height: 60px;margin-bottom: 38px;}
+        .txt_wrap p{font-size: 19px;color: #fff;line-height: 28px;margin-bottom: 38px;}
+        .txt_wrap a{display: inline-block;font-size: 15px;padding: 10px 39px;border: 1px solid #fff;border-radius: 24px;color: #fff;}
+
+        /* section */
+        .sec_1st{padding: 130px 200px 170px 200px;width: 1440px;margin: 0 auto;}
+        .sec_1st>h3{
+            display: block;margin: 0 auto;font-size: 40px;color: #333;text-align: center;
+            /* line-height: 45px;margin-bottom: 50px; */
+        }
+        .sec_1st content{}
+        .content_item{
+            float: left;
+            /* w,mr */
+        }
+        .sec_1st>.content>div:last-child{margin-right: 0;}
+        
+        .sec_1st .conItem>div{float: left;}
+        .sec_1st .conItem>div.img{
+            background-color: #f6f6f6;
+            border-radius:81px;margin-right: 40px;
+        }
+        .sec_1st .conItem>div.img>img{display: block;}
+        .sec_1st .conItem>div.textWrap{padding-top: 30px;}
+        .sec_1st .conItem>div.textWrap>h3{margin-bottom: 10px;}
+        .sec_1st .conItem>div.textWrap>p{font-size:18px;color:#7c7c7c}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+        <script>
+            $(document).ready(function(){
+                $(".slide").bxSlider()
+            })
+        </script>
+</head>
+<body>
+    <header class="header_wrap">
+        <header class="header">
+            <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+            <nav class="navbar">
+                <ul class="clearfix">
+                    <li><a href="#">아마존 입점</a></li>
+                    <li><a href="#">알리바바 입점</a></li>
+                    <li><a href="#">쇼핑몰 제작</a></li>
+                    <li><a href="#">국내몰 운영</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+    <div class="visual_wrap">
+        <ul class="slide">
+            <li>
+                <div class="txt_wrap">
+                    <div class="insidelogo"><img src="images/visual_logo1.png" alt=""></div>
+                    <h2>알리바바닷컴<br>GGS멤버십 할인</h2>
+                    <p>골드서플라이어(GGS)멤버십 및 GGS플러스 단기 할인 프로모션</p>
+                    <a href="#">자세히보기</a>
+                </div>
+                <img src="images/bg_slide01.jpg" alt="">
+            </li>
+            <li>
+                <div class="txt_wrap">
+                    <div class="insidelogo"><img src="images/visual_logo2.png" alt=""></div>
+                    <h2>중소중소벤처기업진흥공단<br>온라인수출지원사업 공식 수행기관 선정</h2>
+                    <p>2016년부터 7년 연속 선정, 가비아CNS</p>
+                    <a href="#">자세히보기</a>
+                </div>
+                <img src="images/bg_slide02.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <section class="sec_1st">
+        <h3>해외 마켓 전문가가<br>수출을 도와드립니다</h3>
+        <div class="content clearfix">
+            <div class="content_item clearfix">
+                <div class="img"><img src="images/logo_amazon.png" alt=""></div>
+                <div class="txt_wrap">
+                    <h4>아마존 입점</h4>
+                    <p>전 세계 3억명의 아마존 고객을 대상으로<br>고객사의 온라인 스토어를 오픈 및 운영 대행</p>
+                </div>
+                <div class="content_item clearfix">
+                    <div class="img"><img src="images/logo_alibaba.png" alt=""></div>
+                    <div class="txt_wrap">
+                        <h4>아리바바 입점</h4>
+                        <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>알리바바 입점 및 운영 대행</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec_1st">
+        <h3>글로벌 쇼핑몰 제작,<br>국내몰 운영도 가능합니다</h3>
+        <div class="content clearfix">
+            <div class="content_item clearfix">
+                <div class="img"><img src="images/logo_shoppingmall.png" alt=""></div>
+                <div class="txt_wrap">
+                    <h4>쇼핑몰 제작</h4>
+                    <p>글로벌 솔루션 (마젠토, 우커머스) 기반의 글로벌 쇼핑몰 제작<br>국내쇼핑몰(가비아 퍼스트몰)<br></p>
+                </div>
+                <div class="content_item clearfix">
+                    <div class="img"><img src="images/logo_domestic.png" alt=""></div>
+                    <div class="txt_wrap">
+                        <h4>국내몰 운영</h4>
+                        <p>자사몰 운영대행<br>제휴 판매 채널 입점 및 운영 대행</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
