@@ -54,3 +54,10 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     letter-spacing: 0.34em;margin-bottom: 10px;
 }
 .visual_wrap .visual img{position: absolute;right: 0;}
+
+
+.visual01_wrap{background-color: #EEEEEE;height: 196px;width: 100%;}
+.visual01_wrap .visual01{width: 980px;margin: 0 auto;}
+.visual01_wrap .visual01 .visual_icon{float: left;}
+.visual01_wrap .visual01 img{margin: 0 auto;}
+.visual01_wrap .visual01 .v02_txt_wrap{color: #fff;margin: 0 auto; text-align: center;}
