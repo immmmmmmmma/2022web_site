@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.header_wrap{}
+.header{width: 1280px;height: 83px;;margin: 0 auto;position: relative;}
+.header h1{position: absolute;top:10px;left: 10px;}
+.header h1 img{width: 165px;height: 35px;}
+.nav ul{width: 530px;position: absolute;top: 0;right: 0;}
+.nav li{
+    float: left;width: calc( 100% / 3 );
+    display: flex;justify-content: center;justify-items: center;
+}
+.nav li a{
+    font-size: 20px;font-weight: bold;line-height: 76px;
+    color: #1e1e1e;
+}
+.nav li:hover a{
+    color: #ccc;border-bottom: 4px solid #ffd44a;
+    
+}
+
