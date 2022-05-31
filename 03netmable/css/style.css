@@ -1,26 +1,88 @@
 @charset "utf-8";
 
-.header_wrap{}
-.header{width: 1280px;height: 83px;;margin: 0 auto;position: relative;}
-.header h1{position: absolute;top:10px;left: 10px;}
-.header h1 img{width: 165px;height: 35px;}
-.nav ul{width: 530px;position: absolute;top: 0;right: 0;}
-.nav li{
+/* container */
+.container{width: 1280px;height: 83px;;margin: 0 auto;position: relative;}
+.container h1{position: absolute;top:calc( 50% - 17px );left: 10px;}
+.container h1 img{width: 165px;height: 35px;}
+.container ul{width: 530px;position: absolute;top: 0;right: 0;}
+.container li{
     float: left;width: calc( 100% / 3 );
     display: flex;justify-content: center;justify-items: center;
 }
-.nav li a{
+.container li a{
     font-size: 20px;font-weight: bold;line-height: 76px;
     color: #1e1e1e;
 }
-.nav li:hover a{
+.container li:hover a{
     color: #ccc;border-bottom: 4px solid #ffd44a;
 
 }
+.container{width: 1280px;margin: 0 auto;}
 
-.main_banner{}
-.silder_content{}
-.slider{}
-.silder li{float: left;}
-.slider li img{display: block;margin: 0 auto;width: 100%;height: 100%;}
+/* visual */
+.visual{position: relative;height: 100vh;min-height: 800px;}
+.visual .txt_wrap{
+    position: absolute;
+    left: 50%;margin-left: -640px;
+    width: 1280px;height: 100%;
+    color: #fff;
+}
+.visual .txt_wrap .txt{position: absolute;top: 43.5%;left: 39px;}
+.visual .txt_wrap h2{
+    font-size: 70px;font-weight: 700;line-height: 1.3;
+    letter-spacing: -2.6px;
+}
+.visual .txt_wrap p{font-size: 24px;margin-bottom: 15px;}
+.visual .txt_wrap a{
+    display: block;
+    border-bottom: 2px solid #fff;
+}
+.visual .slide_item{
+    height: 100vh;min-height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.visual li>img{width: 100%;}
 
+/* content */
+.main_content{}
+.content{width: 1280px;margin: 0 auto;padding: 160px 0 0 0;}
+.title_wrap{
+    border-bottom: 5px solid #ffd44a;
+}
+.title{}
+.title h3{font-size: 44px;font-weight: 700; letter-spacing: -2px;line-height: 62px;}
+.sub_title{padding: 0 0 0 624px;}
+.sub_title p{font-size: 18px;letter-spacing: -0.6px; line-height: 28px;}
+
+.link_list{padding: 100px 0 0 0;}
+.link{float: left;}
+.link ul{width: calc( ( 100% -64px ) / 3 );}
+.link li{}
+.link li img{}
+.txt_box{}
+.txt_box h4{}
+.txt_box p{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 none #fff;
+}

@@ -9,73 +9,122 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- js -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 </head>
 <script>
     $(document).ready(function(){
-        $(".slider").bxSlider({
+        var slide = $(".slide1").bxSlider({
+            controls:false
         })
     })
 </script>
 <body>
-    <header class="header_wrap">
-        <header class="header">
-            <h1><img src="images/logo.png" alt=""></h1>
-            <nav class="nav">
-                <ul class="clearfix">
-                    <li><a href="#">재단소개</a></li>
-                    <li><a href="#">재단활동</a></li>
-                    <li><a href="#">재단소식</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="main_banner">
-            <div class="slider_content">
-                <ul class="slider clearfix">
-                    <li>
-                        <img src="images/banner1.jpg" alt="">
-                        <div class="txt_wrap">
-                            <h2>어깨동무문고</h2>
-                            <p>다름을 이해하는 문화</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/banner2.jpg" alt="">
-                        <div class="txt_wrap">
-                            <h2>게임소통교육</h2>
-                            <p>게임으로 가까워지는 가족</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/banner3.jpg" alt="">
-                        <div class="txt_wrap">
-                            <h2>전국 장애학생<br>E페스티벌</h2>
-                            <p>게임 안에서 하나되는 축제</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/banner4.jpg" alt="">
-                        <div class="txt_wrap">
-                            <h2>견학 프로그램</h2>
-                            <p>나의 게임산업 탐방기</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/banner5.jpg" alt="">
-                        <div class="txt_wrap">
-                            <h2>게임아카데미</h2>
-                            <p>미래의 꿈 게임에 담다</p>
-                        </div>
-                    </li>
-                </ul>
+    <div class="wrap">
+        <nav class="container">
+            <img src="images/logo.png" alt="">
+            <ul class="clearfix">
+                <li><a href="#">재단소개</a></li>
+                <li><a href="#">재단활동</a></li>
+                <li><a href="#">재단소식</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="visual">
+        <ul class="slide1">
+            <li style="background-image:url(images/banner1.jpg)" class="slide_item">
+                <div class="txt_wrap">
+                    <div class="txt">
+                        <h2>어깨동무문고</h2>
+                        <p>다름을 이해하는 문화</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image:url(images/banner2.jpg)" class="slide_item">
+                <div class="txt_wrap">
+                    <div class="txt">
+                        <h2>게임소통교육</h2>
+                        <p>게임으로 가까워지는 가족</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image:url(images/banner3.jpg)" class="slide_item">
+                <div class="txt_wrap">
+                    <div class="txt">
+                        <h2>전국 장애학생<br>E페스티벌</h2>
+                        <p>게임 안에서 하나되는 축제</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image:url(images/banner4.jpg)" class="slide_item">
+                <div class="txt_wrap">
+                    <div class="txt">
+                        <h2>견학프로그램</h2>
+                        <p>나의 게임산업 탐방기</p>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image:url(images/banner5.jpg)" class="slide_item">
+                <div class="txt_wrap">
+                    <div class="txt">
+                        <h2>게임아카데미</h2>
+                        <p>미래의 꿈 게임에 담다</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <sec class="main_content">
+        <div class="content">
+            <div class="title_wrap">
+                <div class="title">
+                    <h3>문화를 만들고 인재를 키우고<br>
+                        마음을 나눕니다</h3>
+                </div>
+            </div>
+            <div class="sub_title">
+                <p>넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자<br>
+                   다양한 공익 활동을 전개해 나가고 있습니다.</p>
+            </div>
+            <div class="link_list clearfix">
+                <div class="link">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="images/con1.jpg" alt="">
+                            <div class="txt_box">
+                                <h4>문화 만들기</h4>
+                                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>
+                                    즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
+                            </div>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/con2.jpg" alt="">
+                            <div class="txt_box">
+                                <h4>문화 만들기</h4>
+                                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>
+                                    즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
+                            </div>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/con3.jpg" alt="">
+                            <div class="txt_box">
+                                <h4>문화 만들기</h4>
+                                <p>게임을 기반으로 다양한 문화적 가치를 공유하고 누구나<br>
+                                    즐겁게 참여할 수 있는 교육 및 여가 문화를 만들어 갑니다.
+                            </div>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
+    </sec>
 
 </body>
 </html>
