@@ -1,4 +1,4 @@
 # 2022web_site
 1. gabia https://immmmmmmmma.github.io/2022web_site/01site
-1. himedia https://immmmmmmmma.github.io/2022web_site/02site
-1. himedia-m https://immmmmmmmma.github.io/2022web_site/test
+1. himedia https://immmmmmmmma.github.io/2022web_site/02himedia
+1. netmable https://immmmmmmmma.github.io/2022web_site/03netmable
