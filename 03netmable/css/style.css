@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+body{font-family: 'Noto Sans KR', sans-serif;}
+
 /* container */
 .container{width: 1280px;height: 83px;;margin: 0 auto;position: relative;}
 .container h1{position: absolute;top:calc( 50% - 17px );left: 10px;}
@@ -57,14 +59,32 @@
 .sub_title p{font-size: 18px;letter-spacing: -0.6px; line-height: 28px;}
 
 .link_list{padding: 100px 0 0 0;}
-.link{float: left;}
-.link ul{width: calc( ( 100% -64px ) / 3 );}
-.link li{}
-.link li img{}
-.txt_box{}
-.txt_box h4{}
-.txt_box p{}
+.link{width: 1280px;margin: 0 auto;}
+.link ul{margin-bottom: 160px;}
+.link li{
+    width: calc( ( 100% - 64px ) / 3 );float: left;margin-right: 32px;
+}
+.link li:last-child{margin-right: 0;}
+.link li img:hover{
+    transform: translate(0,-20px);
+    box-shadow: 0 20px 1em rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+.txt_box{padding: 20px 16px 0;}
+.txt_box h4{font-size: 21px;font-weight: 700; letter-spacing: -0.6px; line-height: 32px;}
+.txt_box p{font-size: 15px;list-style: -0.6px;line-height: 24px;}
 
+.content_etc{position: relative;margin-bottom: 158px;}
+.content_etc img{position: absolute; top: 101px;right: 0;}
+.content_etc .txt_box.etc{
+    display: block;height: 338px;width: 1114px;
+    padding: 102px 520px 102px 104px; background-color: #ffd44a;
+}
+.content_etc .txt_box.etc p{
+    display: block;font-size: 28px;font-weight: 500;
+    line-height: 40px;letter-spacing: -1px;margin-bottom: 30px;
+}
+.content_etc .txt_box.etc b{font-weight: 700;}
 
 
 
