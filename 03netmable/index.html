@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,7 @@
     <!-- js -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/wow.min.js"></script>
 </head>
 <script>
     $(document).ready(function(){
@@ -25,6 +27,8 @@
             
         })
     })
+
+    new WOW() .inint();
 </script>
 <body>
     <div class="wrap">
@@ -87,7 +91,7 @@
     <sec class="main_content">
         <div class="content">
             <div class="title_wrap">
-                <div class="title">
+                <div class="title wow fadeInUp" data-wow-offset="100" data-wow-delay="0.2s">
                     <h3>문화를 만들고 인재를 키우고<br>
                         마음을 나눕니다</h3>
                 </div>
@@ -206,12 +210,12 @@
                    Copyright © Netmarble Corp. All Rights Reserved.
                 </p>
             </div>
-            <div class="policy">
-                <a href="#">개인정보처리방침</a>
-                <a href="#">SNS 저작물 이용 동의서</a>
-                <a href="#">이메일 문의</a>
-                <a href="#">주무관청</a>
-                <a href="#">국세청</a>
+            <div class="policy clearfix">
+                <a href="#" class="clearfix">개인정보처리방침</a>
+                <a href="#" class="clearfix">SNS 저작물 이용 동의서</a>
+                <a href="#" class="clearfix">이메일 문의</a>
+                <a href="#" class="clearfix">주무관청</a>
+                <a href="#" class="clearfix">국세청</a>
             </div>
         </div>
     </footer>

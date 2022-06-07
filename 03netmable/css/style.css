@@ -138,7 +138,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .footer_logo{margin-bottom: 26px;}
 .footer_logo img{
     width: 152px;height: 32px;
-    position: absolute;top: 0;left: 0;
+    position: absolute;top: 0;left: 20px;
 }
 .footer_logo a{letter-spacing: -6px;line-height: 1.63;color: #1e1e1e;}
 .footer_logo a .btn{
@@ -149,7 +149,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .copyright{margin-bottom: 46px;}
 .copyright p{font-size: 11px;line-height: 20px; color: #838383;}
 .policy{}
-.policy a{font-size: 12px;line-height: 20px;color: #838383;}
+.policy a{float: left;;font-size: 12px;line-height: 20px;color: #838383;margin: 0 10px;}
+.policy a:first-child{margin: 0;}
+.policy a:after{
+    float: left;;content: "";display: block;width: 1px;height: 12px;background: #838383;
+    display: flex;justify-content: center;align-items: center;
+}
+.policy a:first-child:after{display: none;}
 
 
 
