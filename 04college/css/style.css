@@ -7,10 +7,10 @@
 .navbar_Cmenu ul{width: 360px;}
 .navbar_Cmenu li{
     float: left;width: calc( 100% / 3);
-    background-color: #C7A25B;
+    background-color: #C7A25B;padding: 12px 0;
 }
 
-.navbar_Cmenu li a{color: #fff;display: block;height: 40px;text-align: center;}
+.navbar_Cmenu li a{color: #fff;display: block;text-align: center;}
 .navbar_Cmenu li:nth-child(2){background-position: -120px 0;}
 .navbar_Cmenu li:nth-child(3){background-position: -240px 0;}
 
@@ -18,16 +18,19 @@
 .navbar_Cmenu li:nth-child(2):hover{background-position: -120px -40px;background-color: #fff;color: #000;}
 .navbar_Cmenu li:nth-child(3):hover{background-position: -240px -40px;background-color: #fff;color: #000;}
 
+/* hover a에 글자 색을 넣어야 색이 바뀜 */
+
 .navbar_Cmenu li:nth-child(1) .active{background-position: -0 0;background-color: #c7a25b;color: #fff;}
 .navbar_Cmenu li:nth-child(2) .active{background-position: -120px 0;background-color: #c7a25b;color: #fff;}
 .navbar_Cmenu li:nth-child(3) .active{background-position: -240px 0;background-color: #c7a25b;color: #fff;}
 
+.navbar_Utilmenu{float: right;}
+.navbar_Utilmenu_wrap{width: 400px;float: left;padding: 12px 0;}
+.letter_size{display: inline-block;}
+.letter_size p{float: left;color: #fff;}
+.letter_size img{display: inline-block;}
 
 
-
-
-/* .navbar_Utilmenu{}
-.navbar_Utilmenu p{}
-.navbar_Utilmenu ul{}
-.navbar_Utilmenu li{}
-.navbar_Utilmenu li a{} */
+.navbar_Utilmenu_etc{float: right;}
+.navbar_Utilmenu_etc li{float: left;}
+.navbar_Utilmenu a{color: #fff;margin: 0 4px;}
