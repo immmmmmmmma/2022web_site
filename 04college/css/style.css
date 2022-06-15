@@ -33,13 +33,15 @@
 .logo{float: left;}
 .logo h1{width: 252px;height: 64px;}
 .menu_wrap{float: right;}
-
+.menu ul{display: flex;justify-content: center;align-items: center;}
 .menu li{float: left;}
 .menu li a{
-    display: block;margin-right: 10px;
-    display: flex;justify-content: center;align-items: center;
+    display: block; margin-right: 50px;
+    font-weight: 700; color: #666;
 }
-.menu li:nth-child(6){width: 45px;height: 45px;background-color: pink;}
+.menu li:nth-child(6){background-color: #f0f;}
+.menu li:last-child{margin-right: 0;}
+
 
 /* section */
 #section{
@@ -58,6 +60,7 @@
 .icon_menu li{float: left;margin-left: 20px;}
 .icon_menu li p{color: #C7A25B;}
 
+/* sec02 */
 #section .sec02{}
 .slide1 li{position: relative;}
 .txt_wrap{
@@ -69,7 +72,7 @@
     background-color: #c7a25b;color: #fff;padding: 12px 30px;
 }
 .slide_list{height: 450px !important;position: relative;}
-
+/* monlie app */
 .sec02 .moblie_app{
     display: flex;justify-content: center;align-items: center;
 }
@@ -79,15 +82,14 @@
 }
 .txt_con1 h3{
     font-size: 42px;font-weight: 300;
-    margin-bottom: 14px;;
+    margin-bottom: 14px;
 }
-.txt_con1 h3 b{}
 .txt_con1 p{margin-bottom: 14px;}
 .txt_con1 a{
     border: 1px solid #fff;
     color: #fff;padding: 12px 30px;
 }
-
+/* hot link */
 .hot_link{color: #fff;padding: 20px;}
 .hot_link>p{font-size: 24px;font-weight: 700;margin-bottom: 20px;}
 .hot_link ul{display: flex;justify-content: center;}
@@ -97,15 +99,24 @@
 }
 .hot_link ul li img{padding: 0 10px 14px;}
 .hot_link ul li p{font-size: 14px;text-align: center;}
-
+/* notice */
 .notice{color: #fff;padding: 20px;}
-.notice>p{font-size: 24px;font-weight: 700;}
+.notice>p{
+    font-size: 24px;font-weight: 700;
+    margin-bottom: 10px;
+}
+.notice .bar{border-bottom: 3px solid #fff;margin-bottom: 10px;}
 .notice_list{}
-.notice_list ul{}
-.notice_list li{}
-.notice_list li p{font-size: 14px}
-.notice_list li span{}
-
+.notice_list li{margin-bottom: 10px;}
+.notice_list li p{
+    width: 190px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.notice_list li a{font-size: 14px;position: relative;color: #fff;}
+.notice_list li span{display: block;position: absolute;top: 0;right: 0;}
+/* news */
 .news{color: #fff;padding: 20px;}
 .news>p{font-size: 24px;font-weight: 700;margin-bottom: 20px;}
 .news_wrap{
@@ -114,16 +125,28 @@
 .news_wrap img{display: inline-block;}
 .news_sns{float: right;}
 .news_sns p{font-size: 14px;margin-bottom: 20px;}
-
+/* tour */
 .tour{
     width: 100%;height: 50px;position: absolute; bottom: 0;
-    background-color: #e9ac36;opacity: 0.7;
+    background-color: rgba(233, 172, 54, 0.7);
     display: flex;justify-content: center;align-items: center;
 }
-.tour a{opacity: 1;color: #fff;}
-
-
-
+.tour a{color: #fff;}
+/* video */
+.video{
+    display: flex;justify-content: center;align-items: center;height: 225px;
+}
+/* slide2 */
+.admission{color: #e9ac36;padding: 20px;}
+.admission h3{
+    font-size: 42px;font-weight: 300;
+    margin-bottom: 20px;
+}
+.admission a{
+    color: #fff;background-color: #c7a25b;
+    padding: 12px 30px;
+}
+.slide2 .items{height: 225px;}
 
 /* 안쪽에 ul li 테크를 다시 사용하기 때문에 >를 반드시 써주자 */
 #section .sec01.container{width: 1200px;}
@@ -135,7 +158,32 @@
 #section .sec02>ul>li:nth-child(5){background-color: #c7a25b;}
 #section .sec02>ul>li:nth-child(6){position: relative;}
 #section .sec02>ul>li:nth-child(7){}
-#section .sec02>ul>li:nth-child(8){width: 900px;height: 450px;}
+#section .sec02>ul>li:nth-child(8){width: 900px;height: 225px;background-color: red;}
+
+
+/* footer */
+footer{background-color: #c7a25b;width: 100%;height: 160px;}
+.footer_wrap{width: 1200px;margin: 0 auto;padding: 24px 0;}
+.footer_logo{float: left;padding: 25px 0;margin-right: 64px;}
+.footer_inner{float: left;color: #fff;}
+.policy{margin-bottom: 14px;}
+.policy a{color: #fff;position: relative;padding: 0 10px;}
+.policy a:first-child{padding-left: 0;}
+.policy a:after{
+    content: "";display: block;width: 2px;height: 16px;background: #fff;
+    position: absolute;right: 0;top: 4px;
+}
+.policy a:last-child:after{display: none;}
+.copyright p{font-size: 14px;}
+
+
+
+
+
+
+
+
+
 
 
 /* common */
@@ -144,12 +192,13 @@ h2{font-size: 62px;font-weight: 700;color: #e9ac36;}
 
 
 
-
+/* bx-wrapper */
 .bx-wrapper {
     -moz-box-shadow: 0 0 0 #ccc;
     -webkit-box-shadow: 0 0 0 #ccc;
     box-shadow: 0 0 0 #ccc;
     border: 0 none ;
+    margin-bottom: 0;
 }
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     position: absolute;

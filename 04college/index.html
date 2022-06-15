@@ -20,7 +20,9 @@
     $(document).ready(function(){
         $(".slide1").bxSlider({
 
-            
+        })
+        $(".slide2").bxSlider({
+
         })
     })
 
@@ -59,7 +61,10 @@
                                 <li><a href="#">학사안내</a></li>
                                 <li><a href="#">대학생활</a></li>
                                 <li><a href="#">학생지원센터</a></li>
-                                <li><a href="#"></a><a href="#"></a></li>
+                                <li class="menu_btn clearfix">
+                                    <a href="#"><img src="images/h_menu.png" alt=""></a>
+                                    <a href="#"><img src="images/p_menu.png" alt=""></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -157,26 +162,33 @@
                 </li>
                 <li>
                     <div class="notice">
-                        <p>
-                            공지사항
-                        </p>
+                        <p> 공지사항</p>
+                        <div class="bar"></div>
                         <div class="notice_list">
                             <ul>
                                 <li>
-                                    <p>[공지]부천대학교 웹진</p>
-                                    <span>2022-06-14</span>
+                                    <a href="#">
+                                        <p>[공지]부천대학교 웹진</p>
+                                        <span>2022-06-14</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <p>[공지]우수대학교 선정</p>
-                                    <span>2022-06-14</span>
+                                    <a href="#">
+                                        <p>[공지]우수대학교 선정</p>
+                                        <span>2022-06-14</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <p>[공지]대학입시 성명회</p>
-                                    <span>2022-06-14</span>
+                                    <a href="#">
+                                        <p>[공지]대학입시 성명회</p>
+                                        <span>2022-06-14</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <p>[공지]2022년 1학기</p>
-                                    <span>2022-06-14</span>
+                                    <a href="#">
+                                        <p>[공지]2022년 1학기 성적</p>
+                                        <span>2022-06-14</span>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -207,11 +219,67 @@
                         <a href="#">캠퍼스 투어</a>
                     </div>
                 </li>
-                <li></li>
-                <li></li>
+                <li style="background-image:url(images/content07.png)">
+                    <div class="video">
+                        <a href="#">
+                            <img src="images/content07_btn.png" alt="">
+                        </a>
+                    </div>
+                
+                </li>
+                <li>
+                    <ul class="slide2">
+                        <li style="background-image:url(images/content08.png)"  class="items">
+                            <div class="admission">
+                                <h3><b>2022년 신·편입생 2차 모집<br>
+                                    2022.7.1 ~ 7.10</b> </h3>
+                                <a href="#">입학사전예약</a>
+                            </div>
+                        </li>
+                        <li style="background-image:url(images/content08.png)" class="items">
+                            <div class="admission">
+                                <h3><b>2022년 신·편입생 2차 모집<br>
+                                    2022.7.1 ~ 7.10</b> </h3>
+                                <a href="#">입학사전예약</a>
+                            </div>
+                        </li>
+                        <li style="background-image:url(images/content08.png)" class="items">
+                            <div class="admission">
+                                <h3><b>2022년 신·편입생 2차 모집<br>
+                                    2022.7.1 ~ 7.10</b> </h3>
+                                <a href="#">입학사전예약</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </section>
 
+    <footer id="footer">
+        <div class="footer_wrap clearfix">
+            <div class="footer_logo">
+                <img src="images/logo_white.png" alt="">
+            </div>
+            <div class="footer_inner">
+                <div class="policy">
+                    <a href="#">회사소개</a>
+                    <a href="#">부천대학교</a>
+                    <a href="#">개인정보취급방침</a>
+                    <a href="#">이용정책</a>
+                    <a href="#">입점/제휴문의 및 광고</a>
+                    <a href="#">이메일 무단수집거부</a>
+                </div>
+                <div class="copyright">
+                    <p>
+                        대표자:홍길동   서울특별시 구로구 구로로 300(구로동 6가)      사업자등록번호: 123-56-789234<br>
+                        통신판매업 신고번호: 제 1234-서울구로구-1004호 개인정보관리 책임자:홍길동 소비자피해보상보험<br>
+                        고객센터 : 1234-5678  FAX : 02-1234-5678 BUCHEON UNIVERSITY@BUCHEON.COM<br>
+                        COPYRIGHT ⓒHANGUK.ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
