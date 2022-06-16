@@ -18,7 +18,7 @@
 .util_menu{float: right;}
 .util_menu li{float: left;}
 .util_menu li>a{
-    color: #fff;display: block;padding: 0 10px;height: 40px;
+    color: #fff;padding: 0 10px;height: 40px;
     display: flex;justify-content: center;align-items: center;
 }
 
@@ -29,18 +29,27 @@
 }
 
 .title{width: 100%;background-color: #fff;}
-.title_wrap{width: 1200px;margin: 0 auto;padding: 36px 0;}
-.logo{float: left;}
+.title_wrap{
+    width: 1200px;margin: 0 auto;padding: 24px 0;
+    display: flex;justify-content:space-between;align-items: center;
+}
+.logo{
+    float: left;
+    padding: 10px 10px;
+
+}
 .logo h1{width: 252px;height: 64px;}
 .menu_wrap{float: right;}
-.menu ul{display: flex;justify-content: center;align-items: center;}
+.menu ul{display: flex;justify-content:center;align-items: center;}
 .menu li{float: left;}
 .menu li a{
     display: block; margin-right: 50px;
     font-weight: 700; color: #666;
 }
-.menu li:nth-child(6){background-color: #f0f;}
-.menu li:last-child{margin-right: 0;}
+.menu_btn{width: 90px;height: 45px;}
+.menu_btn a{float: left;margin-right: 0 !important;}
+
+
 
 
 /* section */
@@ -53,25 +62,28 @@
     background-size: auto,cover;
 }
 
-#section .sec01{height: 140px;margin-bottom: 40px;width: 1500px;margin: 0 auto;}
-.txt{float: left;}
+#section .sec01{height: 200px;margin-bottom: 40px;width: 1500px;margin: 0 auto;}
+.txt{float: left;margin-bottom: 30px;}
 .txt h2 b{font-size: 52px;font-weight: 500;}
-.icon_menu{float: right;padding: 15px 0;}
+.icon_menu{float: right;padding: 30px 0;}
+.icin_menu ul{display: flex;justify-content: center;align-items: center;}
 .icon_menu li{float: left;margin-left: 20px;}
-.icon_menu li p{color: #C7A25B;}
+.icon_menu img{margin-bottom: 4px;}
+.icon_menu li p{color: #C7A25B;text-align: center;}
 
 /* sec02 */
+/* slide1 */
 #section .sec02{}
 .slide1 li{position: relative;}
 .txt_wrap{
-    position: absolute;right: 50px;top: 50px;
-
-}
-.slide_list h2{margin-bottom: 14px;}
-.slide_list a{
-    background-color: #c7a25b;color: #fff;padding: 12px 30px;
+    position: absolute;right: 70px;top: 70px;
+    display: flex;flex-direction: column;align-items: center;
 }
 .slide_list{height: 450px !important;position: relative;}
+.slide_list h2{margin-bottom: 14px;}
+.slide_list a{
+    background-color: #c7a25b;color: #fff;padding: 12px 30px;float: left;
+}
 /* monlie app */
 .sec02 .moblie_app{
     display: flex;justify-content: center;align-items: center;
@@ -80,11 +92,15 @@
     display: flex;justify-content: center;align-items: center;
     flex-direction: column;color: #fff;
 }
-.txt_con1 h3{
+.txt_con1>h3{
     font-size: 42px;font-weight: 300;
     margin-bottom: 14px;
+    text-shadow: 2px 2px #333;
 }
-.txt_con1 p{margin-bottom: 14px;}
+.txt_con1 p{
+    margin-bottom: 14px;
+    align-self: flex-start;
+}
 .txt_con1 a{
     border: 1px solid #fff;
     color: #fff;padding: 12px 30px;
@@ -127,24 +143,41 @@
 .news_sns p{font-size: 14px;margin-bottom: 20px;}
 /* tour */
 .tour{
+    position: relative;
     width: 100%;height: 50px;position: absolute; bottom: 0;
     background-color: rgba(233, 172, 54, 0.7);
     display: flex;justify-content: center;align-items: center;
+    transition: 0.4s;
 }
+.tour a{transition: 0.4s;}
+.tour:hover{
+    width: 100%;height: 100%;position: absolute;
+}
+.tour:hover a{transform: scale(1.2);font-weight: 700;}
+
+
+
 .tour a{color: #fff;}
 /* video */
 .video{
     display: flex;justify-content: center;align-items: center;height: 225px;
 }
+.video a img{transition: 0.3s;}
+.video a:hover img{transform: scale(1.5);}
+
 /* slide2 */
-.admission{color: #e9ac36;padding: 20px;}
+.admission{
+    color: #e9ac36;padding: 20px;position: relative;
+}
 .admission h3{
     font-size: 42px;font-weight: 300;
     margin-bottom: 20px;
 }
 .admission a{
     color: #fff;background-color: #c7a25b;
-    padding: 12px 30px;
+    width: 150px; height: 40px;
+    justify-content: center;align-items: center;
+
 }
 .slide2 .items{height: 225px;}
 
@@ -189,7 +222,8 @@ footer{background-color: #c7a25b;width: 100%;height: 160px;}
 /* common */
 h2{font-size: 62px;font-weight: 700;color: #e9ac36;}
 .container{width: 1200px;margin: 0 auto;}
-
+.btn{display: flex;}
+.btn_img{margin-left: 4px;}
 
 
 /* bx-wrapper */
