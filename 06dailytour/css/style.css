@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
 }
-.form{
+.searchForm{
     width: 290px;
     height: 30px;
     background-color: #fff;
@@ -71,10 +71,84 @@
 
 /* section */
 .section{
-    width: 100%;
-    height: 1300px;
-    background-image: url(../images/backimg01.jpg);
-    background: no-repeat
+    margin: 0 auto;
+    background: no-repeat;
+    background-position: center top;
 }
+
+.sec{
+    width: 980px;
+    padding: 60px 2px;
+    margin: 0 auto;
+}
+.sec>ul>li,
+.subCon01 li,
+.subCon02 li,
+.subCon03 li{
+    float: left;
+    width: 232px;
+    height: 240px;
+}
+
+.sec>ul>li:nth-child(1),
+.sec>ul>li:nth-child(2){
+    float: left;
+    margin-bottom: 16px;
+}
+
+.sec>ul>li:nth-child(1){
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    width: 480px;
+    height: 556px;
+}
+.secForm{
+    width: 480px;
+    height: 300px;
+    background-color: #ff0;
+    margin-bottom: 16px;
+}
+.subCon01>ul>li{
+    float: left;
+    background-color: #f00;
+    margin-right: 16px;
+}
+.subCon01 li:nth-child(2){
+    margin-right: 0;
+}
+.sec>ul>li:nth-child(2){
+    width: 480px;
+    height: 556px;
+    margin-right: 0;
+    background-color: #0ff;
+}
+.subCon02>ul>li{
+    background-color: #f00;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+.subCon02 li:nth-child(4){
+    margin-right: 0;
+}
+
+.subCon03 li{
+    background-color: #f00;
+    margin-right: 16px;
+}
+
+.subCon03 li:nth-child(4){
+    margin-right: 0;
+}
+
+.secForm,
+.conTxt,
+.subCon01 li,
+.subCon02 li,
+.subCon03 li{
+    border-radius: 15px;
+}
+
 
 
