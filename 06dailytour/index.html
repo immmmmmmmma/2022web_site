@@ -7,10 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" class="css">
     <link rel="stylesheet" href="css/jquery.bxslider.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" class="css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+
 
 </head>
 <body>
@@ -19,7 +23,15 @@
             <div class="headerTop">
                 <a href="#"><h1><img src="images/logo.png" alt=""></h1></a>
                 <div class="formWrap">
-                    <div class="searchForm"></div><!-- w290 h30 -->
+                    <div class="searchForm">
+                        <form action="#">
+                            <p class="inpTxt">SEARCH</p>
+                            <input type="text" name="search" placeholder="검색어를 입력하세요" class="inp">
+                            <div class="icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </form>
+                    </div><!-- w290 h30 -->
                 </div>
                 <div class="headerInfo">
                     <p>02-1234-5678</p>
@@ -50,12 +62,28 @@
         <div class="sec">
             <ul class="clearfix">
                 <li>
-                    <div class="mainCon">
-                        <div class="secForm"></div>
+                    <div class="content">
+                        <div class="secForm">
+                        </div>
                         <div class="subCon01">
                             <ul class="clearfix">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="overlay">
+                                            <p>[AGAIN]오사카/고베 3일</p>
+                                            <span>699,999원</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="#">
+                                        <div class="overlay">
+                                            <p>[실속]다낭 3박 상품!</p>
+                                            <span>699,999원</span>
+                                        </div>
+                                    </a>
+                                </li>  
                             </ul>
                         </div>
                     </div>
@@ -65,23 +93,85 @@
                 </li>
                 <div class="subCon02">
                     <ul class="clearfix">                            
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
+                        <li>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="images/landmark01.png" alt="">
+                                <div class="overlay">
+                                    <p></p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="images/landmark02.png" alt="">
+                                <div class="overlay">
+                                    <p></p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="images/landmark03.png" alt="">
+                                <div class="overlay">
+                                    <p></p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="subCon03">
                     <ul class="clearfix">                              
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="overlay">
+                                <p></p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </ul>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js" integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
