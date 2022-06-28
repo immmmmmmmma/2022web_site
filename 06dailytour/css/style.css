@@ -69,7 +69,6 @@ p.inpTxt{
     font-weight: 700;
     margin-left: 7px;
 }
-.headerInfo ul{}
 .headerInfo li{
     float: left;
     margin-left: 7px;
@@ -108,13 +107,66 @@ p.inpTxt{
     background-position: center;
     background-size: cover;
 }
-
 .sec{
     width: 980px;
     padding: 60px 2px;
     margin: 0 auto;
+    overflow: hidden;
 }
-.sec>ul>li,
+.sec>ul>li:nth-child(1),
+.sec>ul>li:nth-child(2){
+    float: left;
+    margin-bottom: 16px;
+}
+.sec>ul>li:nth-child(1){
+    width: 980px;
+    height: 556px;
+}
+.aniAirplane{
+    position: absolute;
+    bottom: -200px;
+    left: -900px;
+    animation: realair;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes realair {
+    0%{transform: translate(0,0);}
+    100%{transform: translate(2500px, -800px);}
+}
+.aniBalloon{
+    position: absolute;
+    top: 280px;
+    right: 420px;
+    animation-name: balloon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes balloon {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(20px);}
+}
+
+.content>ul>li{
+    display: flex;
+    flex-direction: row;
+}
+.formWrap{
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.secForm{
+    width: 480px;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
 .subCon01 li,
 .subCon02 li,
 .subCon03 li{
@@ -122,43 +174,27 @@ p.inpTxt{
     width: 232px;
     height: 240px;
 }
-
-.sec>ul>li:nth-child(1),
-.sec>ul>li:nth-child(2){
-    float: left;
-    margin-bottom: 16px;
-}
-
-.sec>ul>li:nth-child(1){
-    /* display: block; */
-    display: flex;
-    align-items: center;
-    margin-right: 16px;
-    width: 480px;
-    height: 556px;
-}
-.secForm{
-    width: 480px;
-    height: 300px;
-    background-color: #ff0;
-    margin-bottom: 16px;
-}
-
-
 .subCon01>ul>li{
     float: left;
-    background-color: #f00;
     margin-right: 16px;
+    position: relative;
 }
 .subCon01 li:nth-child(2){
     margin-right: 0;
 }
-.sec>ul>li:nth-child(2){
+.subCon01>ul>li>img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+.conTxt{
     width: 480px;
     height: 556px;
     margin-right: 0;
     /* background-color: #0ff; */
-    padding: 40px 100px 0 20px;
+    padding: 30px 100px 0 20px;
     color: #1F6D8C;
     font-size: 30px;
 }
@@ -186,7 +222,6 @@ p.inpTxt{
 .subCon03 li:nth-child(4){
     margin-right: 0;
 }
-
 
 .secForm,
 .conTxt,
@@ -243,19 +278,22 @@ p.inpTxt{
 .subCon01 li:nth-child(1){background-image: url(../images/japan.jpg);}
 .subCon01 li:nth-child(2){background-image: url(../images/danang.jpg);}
 
-.subCon02 li:nth-child(3){background-image: url(../images/03여행05.jpg);}
-.subCon02 li:nth-child(4){background-image: url(../images/03여행06.jpg);}
+.subCon02 li:nth-child(3){background-image: url(../images/airdate.png);}
+.subCon02 li:nth-child(4){background-image: url(../images/airpoto.png);}
 
-.subCon03 li:nth-child(1){background-image: url(../images/03여행07.jpg);}
-.subCon03 li:nth-child(2){background-image: url(../images/03여행08.jpg);}
-.subCon03 li:nth-child(3){background-image: url(../images/03여행09.jpg);}
-.subCon03 li:nth-child(4){background-image: url(../images/03여행10.jpg);}
+.subCon03 li:nth-child(1){background-image: url(../images/airline01.jpg);}
+.subCon03 li:nth-child(2){background-image: url(../images/airline03.jpg);}
+.subCon03 li:nth-child(3){background-image: url(../images/services.png);}
+.subCon03 li:nth-child(4){background-image: url(../images/covid_certificate.jpg);}
 
 .subCon03 li .overlay{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.subCon03 li .overlay:hover{
+    transition: 0.4s;
 }
 .subCon03 li .overlay:hover i{
     transform: rotate(180deg);
@@ -265,15 +303,16 @@ p.inpTxt{
 .subCon03 li .overlay:hover h3,
 .subCon03 li .overlay:hover p{
     opacity: 1;
-    transition-delay: 0.3s ;
-    transition: 0.3s;
+    transition: 0.4s;
+    transition-delay: 0.2s;
 }
 .subCon03 li .overlay i{
     color: #fff;
     font-size: 25px;
-
     position: absolute;
-    top: 30px
+    top: 30px;
+    transition: 0.8s;
+
 }
 .subCon03 li .overlay img{
     position: absolute;
@@ -288,4 +327,51 @@ p.inpTxt{
     padding: 80px 0 0 0;
 }
 
+.footer{
+    background-color: #1B70A6;
+    width: 100%;
+}
+.footerWrap{
+    width: 980px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.infoWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.info ul li{
+    float: left;
+    position: relative;
+    margin-right: 16px;
+}
+.info ul li:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    margin: 0 -8px;
+}
+.info ul li:first-child:after{
+    display: none;
+}
+.info ul li a{
+    color: #fff;
+    font-weight: 600;
+}
+.info ul li a:hover{
+    color: #cdcdcd;
+    transition: 0.3;
+}
+.infoMark ul li{
+    display: none;
+}
+.copyright{
+    color: #fff;
+}
 
