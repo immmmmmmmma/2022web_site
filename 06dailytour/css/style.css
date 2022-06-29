@@ -124,7 +124,7 @@ p.inpTxt{
 }
 .aniAirplane{
     position: absolute;
-    bottom: -200px;
+    bottom: -400px;
     left: -900px;
     animation: realair;
     animation-duration: 7s;
@@ -167,6 +167,105 @@ p.inpTxt{
     background-color: #fff;
     margin-bottom: 16px;
 }
+.slideTap{
+    position: absolute;
+    left:0;top: 0;
+    width: 130px;
+    height: 100%;
+}
+.slideTap a.active{
+    background-color: #fff;
+    color:#1B70A6
+}
+.slideTap a{
+    background: #1B70A6;
+    height:calc( 100% / 4 );
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideTap a:hover{
+    background-color: #fff;
+    color:#1B70A6
+}
+
+
+
+
+.slide fieldset{
+    border: 0 none;
+}
+.slide .blind{
+    display: block;position: absolute;left: 0;top: -999px;
+}
+.slide form{
+    width: calc( 100% - 130px);
+    position: absolute;
+    right: 0;
+    padding: 40px 30px 0;
+}
+.field label{
+    display: block;
+    padding: 5px 0;
+}
+.field select{
+    width: 100%;height: 30px;font-size: 1em;
+    padding: 0 1em;
+    border-radius: 3px;
+}
+.field select:focus{
+    outline: none;
+}
+.field.date,.field.air{
+    display: flex;
+    position: relative;
+}
+
+.field div{
+    width: calc( ( 100% - 10px ) / 2 );
+}
+.field div:nth-of-type(1){
+    margin-right: 10px;
+}
+.field .inp-field{
+    width: 100%;font-size: 1em;height: 30px;
+    text-align: right;padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.field.air{
+    margin-bottom: 10px;
+}
+.inp-field-s{
+    width: 65px;
+    font-size: 1em;height: 30px;
+    text-align: right;padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.userage ul{
+    display: flex;
+    justify-content: space-between;
+}
+.field.date .inp-field:focus{
+    outline: none;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-search{
+    padding: 10px 60px;
+    background-color: #1B70A6;
+    color: #fff;
+}
+
+
+
 .subCon01 li,
 .subCon02 li,
 .subCon03 li{
@@ -375,3 +474,12 @@ p.inpTxt{
     color: #fff;
 }
 
+
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0px none;
+    margin-bottom: 0;;
+}
