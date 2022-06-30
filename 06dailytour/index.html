@@ -15,7 +15,6 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
 
@@ -24,12 +23,13 @@
             var slide = $(".slide").bxSlider({
                 controls:false,
                 pagerCustom:".slideTap",
-                mode:"vertical"
+                mode:"vertical",
+                touchEnabled: false,
             });
 
         });
         $(document).ready(function(){
-            $("#sdate,#edate").datepicker({
+            $("#sdate1,#edate1,#sdate2,#edate2,#sdate3,#edate3,#sdate4,#edate4").datepicker({
                 dateFormat: 'yy/mm/dd',
                 prevText: '이전 달',
                 nextText: '다음 달',
@@ -107,7 +107,7 @@
                                     <div class="secForm">
                                         <div class="slideWrap">
                                             <ul class="slide">
-                                                <li>
+                                                <li class="slideItem">
                                                     <form action="#">
                                                         <fieldset>
                                                             <legend class="blind">여행일정</legend>
@@ -141,11 +141,151 @@
                                                             <div class="field date">
                                                                 <div class="left">
                                                                     <label for="sdate">출발일</label>
-                                                                    <input type="text" id="sdate" class="inp-field">
+                                                                    <i class="fa-solid fa-calendar-days iconR"></i>
+                                                                    <input type="text" id="sdate1" class="inp-field">
                                                                 </div>
                                                                 <div class="right"> 
                                                                     <label for="edate">도착일</label>
-                                                                    <input type="text" id="edate" class="inp-field">
+                                                                    <i class="fa-solid fa-calendar-days iconL"></i>
+                                                                    <input type="text" id="edate1" class="inp-field">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field air">
+                                                                <div>
+                                                                    <label for="userseat">좌석등급</label>
+                                                                    <select name="userseat" id="userseat">
+                                                                        <option value="퍼스트">일등석</option>
+                                                                        <option value="비지니스">이등석</option>
+                                                                        <option value="이코노미">일반석</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="userage">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <label for="usernum">성인</label>
+                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
+                                                                        </li>
+                                                                        <li>
+                                                                            <label for="usernum">아이</label>
+                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="btn"><button type="text" class="btn-search">검색하기</button></div>
+                                                    </form>
+                                                </li>
+                                                <li class="slideItem">
+                                                    <form action="#">
+                                                        <fieldset>
+                                                            <legend class="blind">여행일정</legend>
+                                                            <div class="field">
+                                                                <label for="gogo">가고싶은 도시/공항을 선택하세요.</label>
+                                                                <select name="golo">
+                                                                    <option value="">선택하세요</option>
+                                                                    <option value="파리">파리</option>
+                                                                    <option value="런던">런던</option>
+                                                                    <option value="로마">로마</option>
+                                                                    <option value="프라하">프라하</option>
+                                                                    <option value="괌">괌</option>
+                                                                    <option value="사이판">사이판</option>
+                                                                    <option value="시드니">시드니</option>
+                                                                    <option value="홍콩">홍콩</option>
+                                                                    <option value="하노이">하노이</option>
+                                                                    <option value="방콕">방콕</option>
+                                                                    <option value="마닐라">마닐라</option>
+                                                                    <option value="싱가포르">싱가포르</option>
+                                                                    <option value="다낭">다낭</option>
+                                                                    <option value="상하이">상하이</option>
+                                                                    <option value="광저우">광저우</option>
+                                                                    <option value="북경">북경</option>
+                                                                    <option value="도쿄">도쿄</option>
+                                                                    <option value="오사카">오사카</option>
+                                                                    <option value="나고야">나고야</option>
+                                                                    <option value="후쿠오카">후쿠오카</option>
+                                                                    <option value="오키나와">오키나와</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="field date">
+                                                                <div class="left">
+                                                                    <label for="sdate">출발일</label>
+                                                                    <i class="fa-solid fa-calendar-days iconR"></i>
+                                                                    <input type="text" id="sdate2" class="inp-field">
+                                                                </div>
+                                                                <div class="right"> 
+                                                                    <label for="edate">도착일</label>
+                                                                    <i class="fa-solid fa-calendar-days iconL"></i>
+                                                                    <input type="text" id="edate2" class="inp-field">
+                                                                </div>
+                                                            </div>
+                                                            <div class="field air">
+                                                                <div>
+                                                                    <label for="userseat">좌석등급</label>
+                                                                    <select name="userseat" id="userseat">
+                                                                        <option value="퍼스트">일등석</option>
+                                                                        <option value="비지니스">이등석</option>
+                                                                        <option value="이코노미">일반석</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="userage">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <label for="usernum">성인</label>
+                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
+                                                                        </li>
+                                                                        <li>
+                                                                            <label for="usernum">아이</label>
+                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                        <div class="btn"><button type="text"  class="btn-search">검색하기</button></div>
+                                                    </form>
+                                                </li>
+                                                <li class="slideItem">
+                                                    <form action="#">
+                                                        <fieldset>
+                                                            <legend class="blind">여행일정</legend>
+                                                            <div class="field">
+                                                                <label for="gogo">가고싶은 도시/공항을 선택하세요.</label>
+                                                                <select name="golo">
+                                                                    <option value="">선택하세요</option>
+                                                                    <option value="파리">파리</option>
+                                                                    <option value="런던">런던</option>
+                                                                    <option value="로마">로마</option>
+                                                                    <option value="프라하">프라하</option>
+                                                                    <option value="괌">괌</option>
+                                                                    <option value="사이판">사이판</option>
+                                                                    <option value="시드니">시드니</option>
+                                                                    <option value="홍콩">홍콩</option>
+                                                                    <option value="하노이">하노이</option>
+                                                                    <option value="방콕">방콕</option>
+                                                                    <option value="마닐라">마닐라</option>
+                                                                    <option value="싱가포르">싱가포르</option>
+                                                                    <option value="다낭">다낭</option>
+                                                                    <option value="상하이">상하이</option>
+                                                                    <option value="광저우">광저우</option>
+                                                                    <option value="북경">북경</option>
+                                                                    <option value="도쿄">도쿄</option>
+                                                                    <option value="오사카">오사카</option>
+                                                                    <option value="나고야">나고야</option>
+                                                                    <option value="후쿠오카">후쿠오카</option>
+                                                                    <option value="오키나와">오키나와</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="field date">
+                                                                <div class="left">
+                                                                    <label for="sdate">출발일</label>
+                                                                    <i class="fa-solid fa-calendar-days iconR"></i>
+                                                                    <input type="text" id="sdate3" class="inp-field">
+                                                                </div>
+                                                                <div class="right"> 
+                                                                    <label for="edate">도착일</label>
+                                                                    <i class="fa-solid fa-calendar-days iconL"></i>
+                                                                    <input type="text" id="edate3" class="inp-field">
                                                                 </div>
                                                                
                                                             </div>
@@ -175,7 +315,7 @@
                                                         <div class="btn"><button type="text"  class="btn-search">검색하기</button></div>
                                                     </form>
                                                 </li>
-                                                <li>
+                                                <li class="slideItem">
                                                     <form action="#">
                                                         <fieldset>
                                                             <legend class="blind">여행일정</legend>
@@ -209,149 +349,14 @@
                                                             <div class="field date">
                                                                 <div class="left">
                                                                     <label for="sdate">출발일</label>
-                                                                    <input type="text" id="sdate" class="inp-field">
+                                                                    <i class="fa-solid fa-calendar-days iconR"></i>
+                                                                    <input type="text" id="sdate4" class="inp-field">
                                                                 </div>
                                                                 <div class="right"> 
                                                                     <label for="edate">도착일</label>
-                                                                    <input type="text" id="edate" class="inp-field">
+                                                                    <i class="fa-solid fa-calendar-days iconL"></i>
+                                                                    <input type="text" id="edate4" class="inp-field">
                                                                 </div>
-                                                               
-                                                            </div>
-                                                            <div class="field air">
-                                                                <div>
-                                                                    <label for="userseat">좌석등급</label>
-                                                                    <select name="userseat" id="userseat">
-                                                                        <option value="퍼스트">일등석</option>
-                                                                        <option value="비지니스">이등석</option>
-                                                                        <option value="이코노미">일반석</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="userage">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <label for="usernum">성인</label>
-                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
-                                                                        </li>
-                                                                        <li>
-                                                                            <label for="usernum">아이</label>
-                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </fieldset>
-                                                        <div class="btn"><button type="text"  class="btn-search">검색하기</button></div>
-                                                    </form>
-                                                </li>
-                                                <li>
-                                                    <form action="#">
-                                                        <fieldset>
-                                                            <legend class="blind">여행일정</legend>
-                                                            <div class="field">
-                                                                <label for="gogo">가고싶은 도시/공항을 선택하세요.</label>
-                                                                <select name="golo">
-                                                                    <option value="">선택하세요</option>
-                                                                    <option value="파리">파리</option>
-                                                                    <option value="런던">런던</option>
-                                                                    <option value="로마">로마</option>
-                                                                    <option value="프라하">프라하</option>
-                                                                    <option value="괌">괌</option>
-                                                                    <option value="사이판">사이판</option>
-                                                                    <option value="시드니">시드니</option>
-                                                                    <option value="홍콩">홍콩</option>
-                                                                    <option value="하노이">하노이</option>
-                                                                    <option value="방콕">방콕</option>
-                                                                    <option value="마닐라">마닐라</option>
-                                                                    <option value="싱가포르">싱가포르</option>
-                                                                    <option value="다낭">다낭</option>
-                                                                    <option value="상하이">상하이</option>
-                                                                    <option value="광저우">광저우</option>
-                                                                    <option value="북경">북경</option>
-                                                                    <option value="도쿄">도쿄</option>
-                                                                    <option value="오사카">오사카</option>
-                                                                    <option value="나고야">나고야</option>
-                                                                    <option value="후쿠오카">후쿠오카</option>
-                                                                    <option value="오키나와">오키나와</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="field date">
-                                                                <div class="left">
-                                                                    <label for="sdate">출발일</label>
-                                                                    <input type="text" id="sdate" class="inp-field">
-                                                                </div>
-                                                                <div class="right"> 
-                                                                    <label for="edate">도착일</label>
-                                                                    <input type="text" id="edate" class="inp-field">
-                                                                </div>
-                                                               
-                                                            </div>
-                                                            <div class="field air">
-                                                                <div>
-                                                                    <label for="userseat">좌석등급</label>
-                                                                    <select name="userseat" id="userseat">
-                                                                        <option value="퍼스트">일등석</option>
-                                                                        <option value="비지니스">이등석</option>
-                                                                        <option value="이코노미">일반석</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="userage">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <label for="usernum">성인</label>
-                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
-                                                                        </li>
-                                                                        <li>
-                                                                            <label for="usernum">아이</label>
-                                                                            <input type="number" name="usernum" id="usernum" class="inp-field-s">
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </fieldset>
-                                                        <div class="btn"><button type="text"  class="btn-search">검색하기</button></div>
-                                                    </form>
-                                                </li>
-                                                <li>
-                                                    <form action="#">
-                                                        <fieldset>
-                                                            <legend class="blind">여행일정</legend>
-                                                            <div class="field">
-                                                                <label for="gogo">가고싶은 도시/공항을 선택하세요.</label>
-                                                                <select name="golo">
-                                                                    <option value="">선택하세요</option>
-                                                                    <option value="파리">파리</option>
-                                                                    <option value="런던">런던</option>
-                                                                    <option value="로마">로마</option>
-                                                                    <option value="프라하">프라하</option>
-                                                                    <option value="괌">괌</option>
-                                                                    <option value="사이판">사이판</option>
-                                                                    <option value="시드니">시드니</option>
-                                                                    <option value="홍콩">홍콩</option>
-                                                                    <option value="하노이">하노이</option>
-                                                                    <option value="방콕">방콕</option>
-                                                                    <option value="마닐라">마닐라</option>
-                                                                    <option value="싱가포르">싱가포르</option>
-                                                                    <option value="다낭">다낭</option>
-                                                                    <option value="상하이">상하이</option>
-                                                                    <option value="광저우">광저우</option>
-                                                                    <option value="북경">북경</option>
-                                                                    <option value="도쿄">도쿄</option>
-                                                                    <option value="오사카">오사카</option>
-                                                                    <option value="나고야">나고야</option>
-                                                                    <option value="후쿠오카">후쿠오카</option>
-                                                                    <option value="오키나와">오키나와</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="field date">
-                                                                <div class="left">
-                                                                    <label for="sdate">출발일</label>
-                                                                    <input type="text" id="sdate" class="inp-field">
-                                                                </div>
-                                                                <div class="right"> 
-                                                                    <label for="edate">도착일</label>
-                                                                    <input type="text" id="edate" class="inp-field">
-                                                                </div>
-                                                               
                                                             </div>
                                                             <div class="field air">
                                                                 <div>
@@ -391,7 +396,7 @@
                                     <div class="subCon01">
                                         <ul class="clearfix">
                                             <li>
-                                                <img src="images/icon_hot.png" alt="">
+                                                <img src="images/icon_hot.png" alt="" class="iconHot">
                                                 <a href="#">
                                                     <div class="overlay">
                                                         <p>[AGAIN]오사카/고베 3일</p>
@@ -400,7 +405,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <img src="images/icon_hot.png" alt="">
+                                                <img src="images/icon_hot.png" alt="" class="iconHot">
                                                 <a href="#">
                                                     <div class="overlay">
                                                         <p>[실속]다낭 3박 상품!</p>
@@ -447,46 +452,54 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="slideNext"></div>
+                            <div class="slidePrev"></div>
                           </div>
                         <li>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                    <img src="images/landmark01.png" alt="">
+                                    <img src="images/rest1.jpg" alt="">
                                     <div class="overlay">
-                                        <p>[북유럽 3국] 9일 모음</p>
+                                        <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="images/landmark02.png" alt="">
+                                    <img src="images/rest2.jpg" alt="">
                                     <div class="overlay">
-                                        <p>[북유럽 3국] 9일 모음</p>
+                                        <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="images/landmark03.png" alt="">
+                                    <img src="images/rest3.jpg" alt="">
                                     <div class="overlay">
-                                        <p>[북유럽 3국] 9일 모음</p>
+                                        <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                <div class="slideNext">
+                                    <img src="images/roll_right.png" alt="">
+                                </div>
+                                <div class="slidePrev">
+                                    <img src="images/roll_left.png" alt="">
+                                </div>
                               </div>
                         </li>
                         <li>
+                            <img src="images/hotel01.png" alt="">
                             <div class="overlay">
-                                <p></p>
+                                <p>[호텔/리조트]호캉스 특가</p>
+                                <span>라이브 특가 90,000원~</span>
                             </div>
                         </li>
                         <li>
+                            <img src="images/hotel07.jpg" alt="">
                             <div class="overlay">
-                                <p></p>
+                                <p>[테마/국내]인기숙소</p>
+                                <span>#경치도 보고 #맛집도 가고</span>
                             </div>
                         </li>
                     </ul>
@@ -587,8 +600,8 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".slideNext",
+            prevEl: ".slidePrev",
           },
         });
       </script>

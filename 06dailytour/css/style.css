@@ -203,14 +203,24 @@ p.inpTxt{
     display: block;
     position: absolute;
     left: 0;
-    top: -999px;
+    top: -9999px;
 }
 .slide form{
-    width: calc( 100% - 130px);
+    width: calc( 100% - 50px);
+    /* position: absolute;
+    right: 0; */
+    padding: 30px 0 0 50px;
+}
+.slideWrap{
+    width: 350px;
+    height: 300px;
     position: absolute;
     right: 0;
-    padding: 40px 30px 0;
 }
+.slideItem{
+    height: 300px;
+}
+
 .field label{
     display: block;
     padding: 5px 0;
@@ -229,6 +239,18 @@ p.inpTxt{
     display: flex;
     position: relative;
 }
+.field.date i{
+    font-size: 15px;
+    color: #333;
+    position: absolute;
+    top: 39px;
+}
+.field.date .iconR{
+    left: 140px;
+}
+.field.date .iconL{
+    left: 10px;
+}
 
 .field div{
     width: calc( ( 100% - 10px ) / 2 );
@@ -246,10 +268,10 @@ p.inpTxt{
     border: 1px solid #ccc;
 }
 .field.air{
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .inp-field-s{
-    width: 65px;
+    width: 55px;
     font-size: 1em;
     height: 30px;
     text-align: right;
@@ -274,6 +296,7 @@ p.inpTxt{
     padding: 10px 60px;
     background-color: #1B70A6;
     color: #fff;
+    border: none;
 }
 
 .subCon01 li,
@@ -319,11 +342,10 @@ p.inpTxt{
 .subCon02 li:nth-child(4){
     margin-right: 0;
 }
-.slideimg{
-    z-index: 3;
-    
+.slideNext{
 }
-
+.slidePrev{
+}
 .subCon03 li{
     /* background-color: #f00; */
     margin-right: 16px;
@@ -356,7 +378,7 @@ p.inpTxt{
     height: 100%;
     /* left: 0; */
     bottom: -150px;
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(27, 112, 166, 0.7);
     position: absolute;
     z-index: 10;
     transition: 0.3s;
@@ -370,6 +392,10 @@ p.inpTxt{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 7px;
+}
+.overlay p,
+.overlay span{
+    letter-spacing: -0.75px;
 }
 .overlay p,
 .overlay span,
@@ -387,8 +413,19 @@ p.inpTxt{
 .subCon01 li:nth-child(1){background-image: url(../images/japan.jpg);}
 .subCon01 li:nth-child(2){background-image: url(../images/danang.jpg);}
 
-.subCon02 li:nth-child(3){background-image: url(../images/airdate.png);}
-.subCon02 li:nth-child(4){background-image: url(../images/airpoto.png);}
+.subCon02 li:nth-child(3),
+.subCon02 li:nth-child(4){
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subCon02 li:nth-child(3) img,
+.subCon02 li:nth-child(4) img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 
 .subCon03 li:nth-child(1){background-image: url(../images/airline01.jpg);}
 .subCon03 li:nth-child(2){background-image: url(../images/airline03.jpg);}
