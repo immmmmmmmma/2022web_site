@@ -79,7 +79,7 @@
         <nav class="navbar">
             <div class="navlist">
                 <ul class="clearfix">
-                    <li><a href="#">여행도시</a></li>
+                    <li><a href="./sub01.html">여행도시</a></li>
                     <li><a href="#">호텔예약</a></li>
                     <li><a href="#">렌트카</a></li>
                     <li><a href="#">여행TIP</a></li>
@@ -98,7 +98,7 @@
                         <img src="images/reallyAir.png" alt="">
                     </div>
                     <div class="aniBalloon">
-                        <img src="images/02풍선.png" alt="">
+                        <img src="images/hotballoon.png" alt="">
                     </div>
                     <div class="content">
                         <ul class="clearfix">
@@ -396,8 +396,8 @@
                                     <div class="subCon01">
                                         <ul class="clearfix">
                                             <li>
-                                                <img src="images/icon_hot.png" alt="" class="iconHot">
                                                 <a href="#">
+                                                    <img src="images/icon_hot.png" alt="" class="iconHot">
                                                     <div class="overlay">
                                                         <p>[AGAIN]오사카/고베 3일</p>
                                                         <span>699,999원~</span>
@@ -405,8 +405,8 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <img src="images/icon_hot.png" alt="" class="iconHot">
                                                 <a href="#">
+                                                    <img src="images/icon_hot.png" alt="" class="iconHot">
                                                     <div class="overlay">
                                                         <p>[실속]다낭 3박 상품!</p>
                                                         <span>699,999원~</span>
@@ -452,39 +452,43 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="slideNext"></div>
-                            <div class="slidePrev"></div>
+                            <div class="slideNext01">
+                                <img src="images/next_btn.png" alt="">
+                            </div>
+                            <div class="slidePrev01">
+                                <img src="images/prev_btn.png" alt="">
+                            </div>
                           </div>
                         <li>
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                    <img src="images/rest1.jpg" alt="">
+                                    <img src="images/rest1.png" alt="">
                                     <div class="overlay">
                                         <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="images/rest2.jpg" alt="">
+                                    <img src="images/rest2.png" alt="">
                                     <div class="overlay">
                                         <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                   <div class="swiper-slide">
-                                    <img src="images/rest3.jpg" alt="">
+                                    <img src="images/rest3.png" alt="">
                                     <div class="overlay">
                                         <p>[휴양지 3국] 9일 모음</p>
                                         <span>2,499,000원~</span>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="slideNext">
-                                    <img src="images/roll_right.png" alt="">
+                                <div class="slideNext02">
+                                    <img src="images/next_btn.png" alt="">
                                 </div>
-                                <div class="slidePrev">
-                                    <img src="images/roll_left.png" alt="">
+                                <div class="slidePrev02">
+                                    <img src="images/prev_btn.png" alt="">
                                 </div>
                               </div>
                         </li>
@@ -600,8 +604,8 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
           navigation: {
-            nextEl: ".slideNext",
-            prevEl: ".slidePrev",
+            nextEl: ".slideNext01, .slideNext02",
+            prevEl: ".slidePrev01, .slidePrev02",
           },
         });
       </script>
