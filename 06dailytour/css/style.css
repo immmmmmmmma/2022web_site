@@ -93,12 +93,16 @@ p.inpTxt{
     font-size: 16px;
     font-weight: 700;
 }
+.navlist li.active,
 .navlist li:hover{
-    background-color: #80ADBF;
+    background-color: #1B70A6;
 }
+.navlist li.active a,
 .navlist li:hover a{
     color: #fff;
 }
+
+
 
 /* section */
 .section{
@@ -121,6 +125,7 @@ p.inpTxt{
 .sec>ul>li:nth-child(1){
     width: 980px;
     height: 556px;
+    position: relative;
 }
 /* animate */
 .aniAirplane{
@@ -140,8 +145,8 @@ p.inpTxt{
 .aniBalloon{
     position: absolute;
     width: 500px;
-    top: 250px;
-    right: 330px;
+    top: 50px;
+    left: 550px;
     animation-name: balloon;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -566,21 +571,38 @@ p.inpTxt{
     height: 400px;
     margin: 0 auto;
     background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.contentWrap.sub{
+.visual h2{
+    color: #fff;
+    transform: translateY(-30px);
+}
+.contentWrap.sub.center{
     background-color: #ccc;
-    width: 1980px;
-
+    width: 100%;
 }
-.content.sub{
+.content.sub.center{
     width: 980px;
-    height: 900px;
-    background-color: #fff;
+    background-color: #1B70A6;
     margin: 0 auto;
     margin-top: -150px;
     margin-bottom: 100px;
+    border-top: 15px solid #1B70A6;
+    border-bottom: 15px solid #1B70A6;
+}
+.content.sub img{
+    /* background-size: cover; */
+}
+
+/* common */
+.f35{
+    font-size: 35px;
+}
+.center{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
