@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+header{}
+.wrapper{
+    width: 1244px;
+    margin: 0 auto;
+}
+.innerList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuList{}
+.menuList h1{}
+nav{}
+.navList{}
