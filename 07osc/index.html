@@ -91,7 +91,10 @@
                         <a href="#">
                             <img src="images/icon_moNav_white.png" alt="" class="white btnTw">
                             <img src="images/icon_moNav_black.png" alt="" class="black btnTb">
+                            
                         </a>
+
+
                     </li>
                 </ul>
                 <ul class="fncUtil">
@@ -115,6 +118,7 @@
         </div>
         <div class="overlay"></div>
         <div class="navbarClone">
+            <img src="images/icon_mo_nav_close.png" alt="" class="close">
             <div class="mMenu">
 
 
@@ -149,7 +153,20 @@
             </div>
         </div>
     </div>
-    <section style="height: 1000px;"></section>
+    <section>
+        <div class="contents">
+            <ul class="conLeft">
+                <li style="background-image: url(images/main_content01.png);">1</li>
+                <li style="background-image: url(images/main_content04.png);">4</li>
+            </ul>
+            <ul class="conRight">
+                <li style="background-image: url(images/main_content02.png);">2</li>
+                <li style="background-image: url(images/main_content03.png);">3</li> 
+                <li style="background-image: url(images/main_content05.png);">5</li>
+                <li style="background-image: url(images/main_content06.png);">6</li>
+            </ul>
+        </div>
+    </section>
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -157,15 +174,15 @@
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
-            fade: true,
+            effect: "fade",
             autoplay: {
                 delay: 1500,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",

@@ -41,9 +41,13 @@ $(".toggle").click(function(){
     $(".navbarClone").css("left",0);
     $(".overlay").show();
 })
-$(".overlay").click(function(){
+$(".close").click(function(){
+    console.log("close")
     $(".navbarClone").css("left","-100%");
     $(".overlay").hide();
 });
+
+
+
 
 $(".navbar>ul").clone().appendTo(".mMenu")
