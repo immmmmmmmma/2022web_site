@@ -48,6 +48,4 @@ $(".close").click(function(){
 });
 
 
-
-
 $(".navbar>ul").clone().appendTo(".mMenu")

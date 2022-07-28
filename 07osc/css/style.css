@@ -204,65 +204,154 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     top: 200px;
     transform: translateX(-50%);
 }
-.txtWrapV .btnV{
+.btnV{
     width: 150px;
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid #666;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.btnV:hover{
+    background-color: #666;
+}
+.btnV:hover a{
+    color: #fff;
+}
 
 /* section */
 .contents{
-    width: 1240px;
-    margin: 0 auto;
     margin-top: -310px;
-}
-.conWrap{
-
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 100px;
 }
-.conWrap ul{
+
+.contents ul{
     z-index: 1;
     display: flex;
     flex-grow: 1;
     flex-basis: 50%;
+    justify-content: center;
+}
+.contents ul li{
+    /* display: flex; */
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.conLeft,
+.conRight{
+    display: flex;
     flex-direction: column;
 }
+
 .conLeft{
     order:1
 }
 .conLeft li{
     height: 620px;
-    background: darkgreen;
 }
+.conLeft li:nth-child(1){
+    position: relative;
+    padding: 60px;
+}
+.conLeft li p{
+    position: absolute;
+    bottom: 150px;
+}
+.conLeft li .price{
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price>span{
+    margin-right: 10px;
+}
+.price .emp{
+    width: 60px;
+    height: 60px;
+    background: #FD5C5C;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .conRight{
     order: 2;
 }
 .conRight li{
     height: 310px;
-    background: skyblue;
+}
+.conRight li .free{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #8DAB70;
 }
 
+.conRight li:nth-child(1),
+.conRight li:nth-child(2){
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 60px;
+    flex-direction: column;
+}
+.conRight li:nth-child(3),
+.conRight li:nth-child(4){
+    padding: 60px;
+    cursor: pointer;
+    position: relative;
+}
+.conRight li:nth-child(3) .txtWrap,
+.conRight li:nth-child(4) .txtWrap{
+    position: absolute;
+    bottom: 30px;
+}
+.conRight li:nth-child(3) .txtWrap>p,
+.conRight li:nth-child(4) .txtWrap>p{
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.contentTeahouse{
+    margin: 0 auto;
+}
+.contentTeahouse>div{
+    /* width: 100%; */
+    height: 619px;
+    background-position: center;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* .teaH{
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
 /* common */
-.mb40px{
-    margin-bottom: 40px;
-}
-.mb180px{
-    margin-bottom: 180px;
-}
-.color333{
-    color: #333;
-}
-.color666{
-    color: #666;
-}
-.f30{
-    font-size: 30px;
-}
+.ml10px{margin-left: 10px;}
+.mr10px{margin-right: 10px;}
+.mb40px{margin-bottom: 40px;}
+.mb180px{margin-bottom: 180px;}
+.color333{color: #333;}
+.color666{color: #666;}
+.colorfff{color: #fff;}
+.f36{font-size: 36px;}
+.f30{font-size: 30px;}
+.f24{font-size: 24px;}
+.fw700{font-weight: 700;}
 /********** css responsive  **********/
 @media (max-width: 1399px) {
 
@@ -394,9 +483,12 @@ body{font-family: 'Gowun Dodum', sans-serif;}
         flex-basis: 50%;
         flex-grow: 1;
     }
-    .conWrap ul{
+    .contents ul{
         flex-grow: 1;
         flex-basis: auto;
+    }
+    .contents ul li{
+        width: 620px;
     }
 }
 
