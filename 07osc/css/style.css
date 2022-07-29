@@ -152,9 +152,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     font-size: 14px;
     font-weight: 400;
 }
-.utilDep{
-    /* display: none; */
-}
+
 .close,
 .adImg,
 .mJoin,
@@ -325,20 +323,143 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     margin: 0 auto;
 }
 .contentTeahouse>div{
-    /* width: 100%; */
+    max-width: 1524px;
     height: 619px;
-    background-position: center;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
+    margin: 40px auto 0;
+    background-size: cover;
+    background: no-repeat center top;
     position: relative;
 }
-/* .teaH{
-    position: relative;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
+.desc_aImg,
+.desc_bImg,
+.desc_cImg,
+.desc_dImg,
+.desc_eImg,
+.desc_fImg,
+.desc1_1_Img,
+.desc1_2_Img,
+.desc1_3_Img,
+.desc1_4_Img,
+.desc2_1_Img,
+.desc2_2_Img,
+.desc4_1_Img,
+.desc5_1_Img,
+.desc5_2_Img,
+.desc7_1_Img,
+.desc_off_Img,
+.desc_on_Img,
+.desc_icon_Img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.desc_on_Img{
+    display: none;
+}
+
+.desc_aImg:hover,
+.desc_bImg:hover,
+.desc_cImg:hover,
+.desc_dImg:hover,
+.desc_eImg:hover,
+.desc_fImg:hover{
+    animation-name: flag;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: flag; */
+}
+
+@keyframes flag {
+    0%{transform: translateX(10px) translateX(-50%);}
+    100%{transform: translateX(-10px) translateX(-50%);}
+
+}
+/* desc img poa */
+.desc_aImg{
+    top: 92%;
+    margin-left: 28%;
+}
+.desc_bImg{
+    top: 52%;
+    margin-left: -19%;
+}
+.desc_cImg{
+    top: 52%;
+    margin-left: 24%;
+}
+.desc_dImg{
+    top: 30%;
+    margin-left: -19%;
+}
+.desc_eImg{
+    top: 27%;
+    margin-left: 24%;
+}
+.desc_fImg{
+    top: 71%;
+    margin-left: 9%;
+}
+
+/* desc char */
+.desc1_1_Img{
+    top: 35.9%;
+    margin-left: -17.8%;
+}
+.desc1_2_Img{
+    top: 34.7%;
+    margin-left: -14%;
+}
+.desc1_3_Img{
+    top: 36.8%;
+    margin-left: -16.3%;
+}
+.desc1_4_Img{
+    top: 36.5%;
+    margin-left: -15.3%;
+}
+.desc2_1_Img{
+    top: 58.9%;
+    margin-left: -8%;
+}
+.desc2_2_Img{
+    top: 64.1%;
+    margin-left: -10%;
+}
+.desc4_1_Img{
+    top: 33.9%;
+    margin-left: 19.2%;
+}
+.desc5_1_Img{
+    top: 60.6%;
+    margin-left: 31.1%;
+}
+.desc5_2_Img{
+    top: 65%;
+    margin-left: 30.9%;
+}
+.desc7_1_Img{
+    top: 82.5%;
+    margin-left: 23%;
+}
+.desc_off_Img{
+    top: 46.8%;
+    margin-left: 4%;
+}
+.desc_on_Img{
+    top: 46.8%;
+    margin-left: 4%;
+    opacity: 0;
+}
+.desc_icon_Img{
+    top: 40.6%;
+    margin-left: 5%;
+}
+
+
 
 /* common */
 .ml10px{margin-left: 10px;}

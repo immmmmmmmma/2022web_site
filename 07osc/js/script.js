@@ -19,6 +19,14 @@ $(".navbarWrap").hover(function(){
     $(".black").hide();
 })
 
+$(".desc_icon_Img").hover(function(){
+    $(".desc_on_Img").show()
+    $(".desc_off_Img").hide()
+},function(){
+    $(".desc_off_Img").show()
+    $(".desc_on_Img").hide()
+})
+
 $(".navbarWrap").mouseenter(function(){
     $(".navbar>ul>li>a").css("color","#333");
     $(".fncUtil>li>a").css("color","#333");
