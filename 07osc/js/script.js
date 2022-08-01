@@ -19,14 +19,6 @@ $(".navbarWrap").hover(function(){
     $(".black").hide();
 })
 
-$(".desc_icon_Img").hover(function(){
-    $(".desc_on_Img").show()
-    $(".desc_off_Img").hide()
-},function(){
-    $(".desc_off_Img").show()
-    $(".desc_on_Img").hide()
-})
-
 $(".navbarWrap").mouseenter(function(){
     $(".navbar>ul>li>a").css("color","#333");
     $(".fncUtil>li>a").css("color","#333");
@@ -43,7 +35,27 @@ $(".navbarWrap").mouseleave(function(){
     $("#header").css("height","initial")
     $("#header").css("background-color","initial")
 })
+// scroll 
+$(function(){
+    var $header = $('header');
+    var $page = $('.contents');
+    var $window = $(window);
+    var pageOffsetTop = $page.offset().top;
+    
+    $window.resize(function(){
+      pageOffsetTop = $page.offset().top;
+    });
+    
+    $window.on('scroll', function(){
+      var scrolled = $window.scrollTop() >= pageOffsetTop;
+      $header.toggleClass('down', scrolled);
+    });
+  });
 
+
+
+
+// toggle
 
 $(".toggle").click(function(){
     $(".navbarClone").css("left",0);
