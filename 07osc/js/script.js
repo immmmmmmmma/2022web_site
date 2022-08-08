@@ -36,21 +36,26 @@ $(".navbarWrap").mouseleave(function(){
     $("#header").css("background-color","initial")
 })
 // scroll 
-$(function(){
-    var $header = $('header');
-    var $page = $('.contents');
-    var $window = $(window);
-    var pageOffsetTop = $page.offset().top;
-    
-    $window.resize(function(){
-      pageOffsetTop = $page.offset().top;
-    });
-    
-    $window.on('scroll', function(){
-      var scrolled = $window.scrollTop() >= pageOffsetTop;
-      $header.toggleClass('down', scrolled);
-    });
-  });
+$(window).scroll(function(){
+    let srcollY = window.pageYOffset;
+
+    if( scrollY > 300){
+        $(".navbar>ul>li>a").css("color","#333");
+        $(".fncUtil>li>a").css("color","#333");
+        $("#header").css("height","100px");
+        $("#header").css("background","#fff");
+        $(".black").show();
+        $(".white").hide();
+    }else{
+        $(".navbar>ul>li>a").css("color","#fff");
+        $(".fncUtil>li>a").css("color","#fff");
+        $("#header").css("height","initial");
+        $("#header").css("background","initial");
+        $(".black").hide();
+        $(".white").show();
+    }
+    $(".scroll").html(parseInt(scrollY))
+})
 
 
 
@@ -69,3 +74,34 @@ $(".close").click(function(){
 
 
 $(".navbar>ul").clone().appendTo(".mMenu")
+
+
+// tab시 스크롤 이동 해보고 안되면 다시 복귀
+
+
+// let params = new URLSearchParams(location.search);
+// console.log(params.get("submenu"))
+
+
+// function tab(){
+//     $(".tab li").click(function(){
+//         let i = $(this).index();
+//         $(".tab li").removeClass("active");
+//         $(this).addClass("active")
+
+//         $(".content>div").hide().eq(i).show()
+//     })
+// }
+
+
+// function views(i){
+//     if( i != null){
+//         $(".tab li").removeClass("active").eq(i).addClass("active");
+//         $(".content>div").hide().eq(i).show();
+//         tab();
+//     }else{
+//         tab();
+//     }
+// }
+
+// views( params.get("submenu") )
