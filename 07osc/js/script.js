@@ -104,4 +104,4 @@ $(".navbar>ul").clone().appendTo(".mMenu")
 //     }
 // }
 
-// views( params.get("submenu") )
+// views( params.get("submenu") ) 이휴
