@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.12/cssgram.min.css"integrity="sha512-kr3JaEexN5V5Br47Lbg4B548Db46ulHRGGwvyZMVjnghW1BKmqIjgEgVHV8D7V+Cbqm/VBgo3Rcbtv+mGLoWXA=="\crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
       .wrap{
@@ -16,6 +19,8 @@
         /* display: flex; */
         justify-content: space-between;
         align-items: center;
+        --bs-gutter-x: 0;
+
       }
       @media (min-width: 1400px){
         .container{
@@ -26,9 +31,17 @@
         width: 150px;
         height: 50px;
       }
+      .loader{
+        width: 60px;
+        height: 60px;
+        bottom: 10px;
+        right: 10px;
+        z-index: 999;
+      }
     </style>
   </head>
   <body>
+    <img src="images/freitag_loader.png" alt="" class="loader d-block position-absolute position-fixed">
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="wrap">
           <div class="container d-flex">
@@ -41,12 +54,98 @@
       </div>
     </nav>
 
-    <div class="cont">
-      <img src="images/main.jpg" alt="" class="container-fluid">
+    <div class="container mb-5">
+      <img src="images/main.jpg" alt="" class="container">
     </div>
-    
+
+    <div class="container mb-5">
+      <h2 class="text-center mb-3 fw-bold">OUR ACCESSORIES</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- #1 s -->
+          <div class="swiper-slide text-center">
+            <img src="images/bag-1.jpg" alt="">
+            <p class="fw-bold fs-22">BACKPACKS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/bag-2.jpg" alt="">
+            <p class="fw-bold fs-22">MESSENGER BAGS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/bag-3.jpg" alt="">
+            <p class="fw-bold fs-22">SHOPPER & TOTE BAGS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/bag-4.jpg" alt="">
+            <p class="fw-bold fs-22">LAPTOP BAGS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/bag-5.jpg" alt="">
+            <p class="fw-bold fs-22">SPORTS & TRAVEL BAGS</p>
+          </div>
+  
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="container mb-5 position-relative d-flex justify-content-center align-items-center">
+      <img src="images/f40-jamie-desktop.webp" alt="" class="d-block w-100%">
+      <img src="images/f40-jamie-mobile.jpg" alt="" class="d-none">
+      <button class="bg-black position-absolute text-light fs-18 fw-bold p-3">MORE F40 JAMIE</button>
+    </div>
+
+    <div class="container mb-5">
+      <h2 class="text-center mb-3 fw-bold py-2">OUR ACCESSORIES</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- #1 s -->
+          <div class="swiper-slide text-center">
+            <img src="images/acc-1.jpg" alt="">
+            <p class="fw-bold fs-22">TOILETRY BAGS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-2.jpg" alt="">
+            <p class="fw-bold fs-22">POUCHES</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-3.jpg" alt="">
+            <p class="fw-bold fs-22">CASES & SLEEVES</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-4.jpg" alt="">
+            <p class="fw-bold fs-22">WALLETS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-5.jpg" alt="">
+            <p class="fw-bold fs-22">KEYHOLDERS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-6.jpg" alt="">
+            <p class="fw-bold fs-22">AGENDA & NOTEBOOKS</p>
+          </div>
+          <div class="swiper-slide text-center">
+            <img src="images/acc-7.jpg" alt="">
+            <p class="fw-bold fs-22">SHOULDER PADS</p>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="container mb-5 position-relative d-flex justify-content-center align-items-center ">
+      <img src="images/poster-desktop.jpg" alt="" class="d-block col-12">
+      <img src="images/poster-moblie.jpg" alt="" class="d-none">
+      <button class="bg-black position-absolute text-light fs-18 fw-bold p-3">JOIN THE F-EDERATION</button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+  
   </body>
 </html>
