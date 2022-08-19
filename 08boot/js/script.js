@@ -8,3 +8,22 @@ new Swiper('.swiper',{
         
     }
 })
+
+
+$(".menu>li>a").click(function(e){
+    e.preventDefault();
+
+    
+    $(".menu>li>a").parent().find(".submenu").hide()
+
+    if( $(this).hasClass("active")){
+        $(".menu>li>a").removeClass("active");
+
+    }else{
+        $(this).parent().find(".submenu").show();
+
+        $(".menu>li>a").removeClass("active"); 
+        $(this).addClass("active");
+    }
+
+})
