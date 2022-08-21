@@ -33,7 +33,7 @@
       .navbar{
         --bs-navbar-padding-y:0;
         --bs-navbar-brand-padding-y:0;
-        --bs-navbar-brand-margin-end:0
+        --bs-navbar-brand-margin-end:0;
       }
       .navbar-toggler{
         background: #4c4c4c;
@@ -41,6 +41,10 @@
         width: 50px;
         height: 50px;
         border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
       }
 
       .submenu{
@@ -116,20 +120,35 @@
       }
       .btn-close{
         position: absolute;
-        top: 0px;
-        right: 10px;
+        top: 10px;
+        right: 20px;
+      }
+      .subscribe{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+      }
+      .subBtn{
+        border: 2px solid #4c4c4c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
     <button type="button" class="btn loader d-block position-absolute position-fixed" data-bs-toggle="button" aria-pressed="false" autocomplete="off" style="background-image: url(images/freitag_loader.png);">
     </button>
-    <nav class="navbar navbar-expand-xxxl navbar-light fixed-top">
+    <nav class="navbar navbar-expand-xxxl navbar-light fixed-top --bs-navbar-toggler-focus-width-none">
         <div class="wrap">
           <div class="container d-flex">
             <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="d-block logo"></a>
-            <button class="navbar-toggler d-flex gap-3 py-3" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
               <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <i class="fa-solid fa-user"></i>
             </button>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -218,6 +237,12 @@
                               <i class="fa-solid fa-location-pin text-dark icon"></i>STORES
                             </a>
                           </li> 
+                          <div class="subscribe p-2 d-flex">
+                            <h5 class="fs-22 fw-bold">FREITAG NEWSLETTER</h5>
+                            <div class="subBtn px-1">
+                              SUBSCRIBE
+                            </div>
+                          </div>
                       </ul>
                     </div>
                 </div>
@@ -226,6 +251,10 @@
         </div>
       </div>
     </nav>
+
+
+    <i class="fa-solid fa-angle-left"></i>
+    <i class="fa-solid fa-angle-right"></i>
     
     <div class="container mb-5 d-flex justify-content-center align-items-center">
       <img src="images/main.jpg" alt="" class="container">
