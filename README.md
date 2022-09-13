@@ -6,3 +6,4 @@
 1. starclass https://immmmmmmmma.github.io/2022web_site/05starclass
 1. tour https://immmmmmmmma.github.io/2022web_site/06dailytour
 1. todolist https://immmmmmmmma.github.io/2022web_site/todolist
+1. osc https://immmmmmmmma.github.io/2022web_site/07osc

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/********** css responsive init  **********/
+body{font-family: 'Gowun Dodum', sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** css responsive  **********/
+@media (max-width: 1399px) {
+
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+@media (max-width: 575px) {
+
+}
