@@ -1,41 +1,51 @@
-@charset "utf-8";
-/********** css responsive init  **********/
-body{font-family: 'Gowun Dodum', sans-serif;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********** css responsive  **********/
-@media (max-width: 1399px) {
-
+body {
+  font-family: "Noto Serif KR", serif;
 }
 
-@media (max-width: 1199px) {
+body {
+  background: rgb(0, 68, 56);
 }
 
-@media (max-width: 991px) {
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 767px) {
-
-
+a:link, a:visited {
+  text-decoration: none;
+  color: #333;
 }
 
-@media (max-width: 575px) {
-
+ul, li {
+  list-style: none;
 }
+
+#header {
+  position: fixed;
+  width: 100%;
+}
+#header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#header .navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .navbar .menu li {
+  margin-right: 50px;
+}
+#header .navbar .menu li .mIcon {
+  font-size: 40px;
+  color: #fff;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+/********** css responsive  **********//*# sourceMappingURL=style.css.map */
