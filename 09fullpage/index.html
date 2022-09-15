@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
 
@@ -38,9 +40,31 @@
             </h1>
             <div class="gnb">
                 <ul class="menu">
-                    <li><a href="#"><i class="fa-regular fa-calendar mIcon"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-user mIcon"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars mIcon"></i></a></li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path id="o1" stroke="#fff" stroke-width="2" d="M1 9h32v23H1zM1 1h32v8H1z"></path>
+                                    <path id="o2" fill="#fff" d="M4 13h2v2H4zM8 13h2v2H8zM12 13h2v2h-2zM16 13h2v2h-2zM20 13h2v2h-2zM24 13h2v2h-2zM28 13h2v2h-2zM4 17h2v2H4zM8 17h2v2H8zM12 17h2v2h-2zM16 17h2v2h-2zM20 17h2v2h-2zM24 17h2v2h-2zM28 17h2v2h-2zM4 21h2v2H4zM8 21h2v2H8zM12 21h2v2h-2zM16 21h2v2h-2zM20 21h2v2h-2zM24 21h2v2h-2zM28 21h2v2h-2zM4 25h2v2H4zM8 25h2v2H8zM12 25h2v2h-2zM16 25h2v2h-2zM20 25h2v2h-2zM24 25h2v2h-2zM28 25h2v2h-2z" style=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="31" viewBox="0 0 23 31" style="">
+                                <g fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="2">
+                                    <ellipse cx="11.5" cy="9.216" rx="7.328" ry="7.289" style=""></ellipse>
+                                    <path d="M21.956 29.927c-.489-5.524-4.99-9.842-10.456-9.842-5.467 0-9.967 4.318-10.456 9.842h20.912z" style=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa-solid fa-bars mIcon"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -49,44 +73,80 @@
     <div id="fullpage">
         <!-- # 1 -->
         <div class="section page1 active" data-anchor="1st">
-            <div class="innerBox imgArea">
-                <img src="img/bg01.jpg" alt="">
+            <div class="wrap">
+                <div class="innerBox imgArea">
+                    <div class="img" style="background-image:url(img/bg01.jpg)"></div>
+                </div>
+                <div class="innerBox textArea">
+                    <h2 class="f">MEET<br>MY<br>SELF</h2>
+                    <p>둘에서 셋, 첫 가족사진</p>
+                    <p>#가족사진촬영</p>
+                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <span>scroll down</span>
+                </div>
             </div>
-            <div class="innerBox textArea">
-                <h2>MEET<br>MY<br>SELF</h2>
-                <p>둘에서 셋, 첫 가족사진</p>
-                <p>#가족사진촬영</p>
-            </div>
-            <a href="#" class="btn_detail">DETAIL VIEW</a>
-            <span>scroll down</span>
-
-
         </div>
+
         <!-- # 2 -->
         <div class="section page2" data-anchor="2nd">
-            2
+            <div class="wrap">
+                <div class="innerBox textArea">
+                    <h2 class="f">HALF<br>MIRROR</h2>
+                    <p>個人鏡觀<br>개인을 경험하는 <br> 거울 셀프 사진관</p>
+                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                </div>
+                <div class="innerBox imgArea">
+                    <div class="img" style="background-image:url(img/bg02.jpg)"></div>
+                </div>
+            </div>
         </div>
     
         <!-- # 3 -->
         <div class="section page3"  data-anchor="3rd">
-            3
+            <div class="wrap">
+                <div class="innerBox imgArea">
+                    <div class="img" style="background-image:url(img/bg03.jpg)"></div>
+                </div>
+                <div class="innerBox textArea">
+                    <h2 class="f">LONG LIFE<br>PRODUCTS</h2>
+                    <p>사진을 <br>
+                        오래 간직할 수 있는</p>
+                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                </div>
+            </div>
         </div>
     
         <!-- # 4 -->
         <div class="section page4"  data-anchor="4th">
-            4
-        </div>
-        <!-- $5 -->
-        <div class="section page4"  data-anchor="4th">
-            5
-        </div>
-    
-        <div class="section fp-auto-height">
-            <div class="container">
-
+            <div class="wrap">
+                <div class="innerBox textArea">
+                    <h2 class="f">GALLERY + <br>
+                        BOOK STRORE</h2>
+                    <p>예술 작풍이<br>함께하는</p>
+                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                </div>
+                <div class="innerBox imgArea">
+                    <div class="img" style="background-image:url(img/bg04.jpg)"></div>
+                </div>
             </div>
         </div>
-    
+
+        <!-- $5 -->
+        <div class="section page5"  data-anchor="5th">
+            <div class="wrap">
+                <div class="innerBox imgArea">
+                    <div class="img" style="background-image:url(img/bg05.jpg)"></div>
+                </div>
+                <div class="innerBox textArea">
+                    <h2 class="f">ONSIL<br>
+                        NEWS</h2>
+                    <p>진행중인<br>
+                        프로그램 안내</p>
+                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -94,6 +154,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-<script src="js/script01.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
