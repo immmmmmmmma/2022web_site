@@ -48,6 +48,9 @@ ul, li {
 }
 #header .navbar .menu li .button {
   padding: 12px;
+  outline: none;
+  --bs-btn-border-width: none;
+  overflow: hidden;
 }
 #header .navbar .menu li .button .bar1,
 #header .navbar .menu li .button .bar2 {
@@ -63,10 +66,47 @@ ul, li {
   height: 3px;
   margin: 6px 0;
   background: #fff;
-  transition: 0.2s;
+  transition: 0.3s;
+}
+#header .navbar .menu li .button.active .bar1 {
+  transform: translateX(44px);
+  transition: 0.3s;
+}
+#header .navbar .menu li .button.active .bar2 {
+  transform: translateX(44px);
+  transition: 0.3s;
+  transition-delay: 0.3s;
+}
+#header .navbar .menu li .button.active .bar3 {
+  transform: translateX(44px);
+  transition: 0.3s;
+  transition-delay: 0.6s;
 }
 #header .navbar .menu li:hover .bar3 {
   width: 44px;
+}
+
+.offcanvas {
+  width: 100%;
+  --bs-offcanvas-width:100%
+  --bs-offcanvas-padding-x: 0;
+  --bs-offcanvas-padding-y: 0;
+}
+
+.offBox {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offTxt {
+  font-size: 21px;
+  color: #8ab1aa;
+}
+
+.offTxt.oTit {
+  font-size: 40px;
+  color: #fff;
 }
 
 .section {
@@ -130,8 +170,9 @@ ul, li {
   width: 0;
   height: 120%;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
   transform: skewX(15deg);
+  z-index: -1;
 }
 .section .wrap .innerBox.textArea .btn_detail:hover:before {
   width: 220px;
@@ -149,7 +190,7 @@ ul, li {
 }
 
 .page1 .wrap {
-  transition: 0.3s;
+  transition: 0.9s;
   opacity: 0;
 }
 .page1 .wrap.move {
@@ -169,7 +210,7 @@ ul, li {
 }
 
 .page2 .wrap {
-  transition: 0.3s;
+  transition: 0.9s;
   opacity: 0;
 }
 .page2 .wrap.move {
@@ -189,7 +230,7 @@ ul, li {
 }
 
 .page3 .wrap {
-  transition: 0.3s;
+  transition: 0.9s;
   opacity: 0;
 }
 .page3 .wrap.move {
@@ -209,7 +250,7 @@ ul, li {
 }
 
 .page4 .wrap {
-  transition: 0.3s;
+  transition: 0.9s;
   opacity: 0;
 }
 .page4 .wrap.move {
@@ -228,13 +269,20 @@ ul, li {
           animation-duration: 1s;
 }
 
-.page5 .wrap.move .left {
+.page5 .wrap {
+  transition: 0.9s;
+  opacity: 0;
+}
+.page5 .wrap.move {
+  opacity: 1;
+}
+.page5.move .left {
   -webkit-animation-name: move1;
           animation-name: move1;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
-.page5 .wrap.move .right {
+.page5.move .right {
   -webkit-animation-name: move2;
           animation-name: move2;
   -webkit-animation-duration: 1s;
@@ -244,53 +292,33 @@ ul, li {
 @-webkit-keyframes move1 {
   0% {
     transform: translateY(200px);
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
 @keyframes move1 {
   0% {
     transform: translateY(200px);
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 @-webkit-keyframes move2 {
   0% {
     transform: translateY(-200px);
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 @keyframes move2 {
   0% {
     transform: translateY(-200px);
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }/*# sourceMappingURL=style01.css.map */

@@ -13,6 +13,11 @@ $("#fullpage").fullpage({
             $("p").css("color","#577e77").css("font-size","72px").css("line-height","100px").css("letter-spacing","18px")
             $(".page1").addClass("move")
             $(".page1 .wrap").addClass("move")
+            $(".btn_detail").hover(function(){
+                $(".btn_detail").css("color","rgb(0,68,56)")
+            },function(){
+                $(".btn_detail").css("color","#fff")
+            })
         }else{
             $(".page1").removeClass("move")
             $(".page1 .wrap").removeClass("move")
@@ -25,6 +30,11 @@ $("#fullpage").fullpage({
             $("p").css("color","#333").css("font-size","36px").css("line-height","54px").css("letter-spacing","initial")
             $(".page2").addClass("move")
             $(".page2 .wrap").addClass("move")
+            $(".btn_detail").hover(function(){
+                $(".btn_detail").css("color","rgb(248,232,193)")
+            },function(){
+                $(".btn_detail").css("color","#fff")
+            })
         }else{
             $(".page2").removeClass("move")
             $(".page2 .wrap").removeClass("move")
@@ -37,6 +47,11 @@ $("#fullpage").fullpage({
             $("p").css("color","#fff")
             $(".page3").addClass("move")
             $(".page3 .wrap").addClass("move")
+            $(".btn_detail").hover(function(){
+                $(".btn_detail").css("color","rgb(149,150,106)")
+            },function(){
+                $(".btn_detail").css("color","#fff")
+            })
         }else{  
             $(".page3").removeClass("move")
             $(".page3 .wrap").removeClass("move")
@@ -46,6 +61,11 @@ $("#fullpage").fullpage({
             $("body").css("background","rgb(148,118,94)")
             $(".page4").addClass("move")
             $(".page4 .wrap").addClass("move")
+            $(".btn_detail").hover(function(){
+                $(".btn_detail").css("color","rgb(148,118,94)")
+            },function(){
+                $(".btn_detail").css("color","#fff")
+            })
             // $("h2").css("color","#fff")
             // $("p").css("color","#fff")
         }else{
@@ -57,6 +77,11 @@ $("#fullpage").fullpage({
             $("body").css("background","rgb(27,40,76)")
             $(".page5").addClass("move")
             $(".page5 .wrap").addClass("move")
+            $(".btn_detail").hover(function(){
+                $(".btn_detail").css("color","rgb(27,40,76)")
+            },function(){
+                $(".btn_detail").css("color","#fff")
+            })
             // $("h2").css("color","#fff")
             // $("p").css("color","#fff")
 
@@ -65,12 +90,15 @@ $("#fullpage").fullpage({
             $(".page5 .wrap").removeClass("move")
         }
     }
-})
+});
 
-$(".btn_detail").hover(function(){
-    $(".btn_detail").css("color","#fff");
-},function(){
-    $(".btn_detail:before").css("color","initial");
-})
+$(".button").click(function(){
+    $(".button").toggleClass(".active")
+});
+// $(".btn_detail").hover(function(){
+//     $(".btn_detail").css("color","#fff");
+// },function(){
+//     $(".btn_detail:before").css("color","");
+// })
 
 
