@@ -88,7 +88,7 @@ ul, li {
 
 .offcanvas {
   width: 100%;
-  --bs-offcanvas-width:100%
+  --bs-offcanvas-width:100%;
   --bs-offcanvas-padding-x: 0;
   --bs-offcanvas-padding-y: 0;
 }
@@ -99,6 +99,19 @@ ul, li {
   background-size: cover;
 }
 
+.offTxt_wrap {
+  padding: 50px 0 0 30px;
+}
+.offTxt_wrap li {
+  margin-bottom: 30px;
+}
+.offTxt_wrap li a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .offTxt {
   font-size: 21px;
   color: #8ab1aa;
@@ -107,6 +120,19 @@ ul, li {
 .offTxt.oTit {
   font-size: 40px;
   color: #fff;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .section {
@@ -120,7 +146,6 @@ ul, li {
   align-items: center;
 }
 .section .wrap .innerBox {
-  width: 50vw;
   height: 100vh;
 }
 .section .wrap .innerBox.textArea {
