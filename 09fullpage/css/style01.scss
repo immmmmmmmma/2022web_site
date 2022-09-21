@@ -23,7 +23,7 @@ ul,li{list-style: none;}
             justify-content: center;
             align-items: center;
             li{
-                margin-right: 50px;
+                margin-right: 40px;
                 .mIcon{
                     font-size: 40px;
                     color: #fff;
@@ -52,18 +52,18 @@ ul,li{list-style: none;}
                     }
                     &.active{
                         .bar1{
-                            transform: translateX(44px);
-                            transition: 0.3s;
+                            transform: translateX(60px);
+                            transition: 0.2s;
                         }
                         .bar2{
-                            transform: translateX(44px);
-                            transition: 0.3s;
-                            transition-delay: 0.3s;
+                            transform: translateX(60px);
+                            transition: 0.2s;
+                            transition-delay: 0.1s;
                         }
                         .bar3{
-                            transform: translateX(44px);
-                            transition: 0.3s;
-                            transition-delay: 0.6s;
+                            transform: translateX(60px);
+                            transition: 0.2s;
+                            transition-delay: 0.2s;
                         }
                     }
                 }
@@ -80,11 +80,21 @@ ul,li{list-style: none;}
     --bs-offcanvas-width:100%;
     --bs-offcanvas-padding-x: 0;
     --bs-offcanvas-padding-y: 0;
+    transition: transform 1s ease-in-out;
+}
+.offcanvas-backdrop{
+        display: none;
 }
 .offBox{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    .ciImg{
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+    }
 }
 .offTxt_wrap{
     padding: 50px 0 0 30px;
@@ -101,17 +111,32 @@ ul,li{list-style: none;}
 .offTxt{
     font-size: 21px;
     color: #8ab1aa;
-}
-.offTxt.oTit{
-    font-size: 40px;
-    color: #fff;
+    &.oTit{
+        font-size: 40px;
+        color: #fff;
+    }
 }
 .btn-close{
+    display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 100px;
+    // top: 100px;
+    // right: 100px;
     outline: none;
     box-shadow:none;
+    background: none;
+    .closePop{
+        width: 35px;
+        height: 35px;
+        opacity: 0;
+    }
+    &.active{
+        .closePop{
+            opacity: 1;
+            transition: 0.3s;
+        }
+    }
 }
 .btn-close:focus{
     outline: none;
@@ -203,6 +228,9 @@ ul,li{list-style: none;}
 }
 
 .page1{
+    background: rgb(0,68,56);
+    z-index:-2;
+    
     .wrap{
         transition: 0.9s;
         opacity: 0;
@@ -223,6 +251,8 @@ ul,li{list-style: none;}
     
 }
 .page2{
+    background: rgb(248,232,193);
+    z-index:-2;
     .wrap{
         transition: 0.9s;
         opacity: 0;
@@ -243,6 +273,8 @@ ul,li{list-style: none;}
     }
     
 .page3{
+    background: rgb(149,150,106);
+    z-index:-2;
     .wrap{
         transition: 0.9s;
         opacity: 0;
@@ -262,6 +294,8 @@ ul,li{list-style: none;}
         }
     }
 .page4{
+    background: rgb(148,118,94);
+    z-index:-2;
     .wrap{
         transition: 0.9s;
         opacity: 0;
@@ -281,6 +315,8 @@ ul,li{list-style: none;}
     }
     }
 .page5{
+    background: rgb(27,40,76);
+    z-index:-2;
     .wrap{
         transition: 0.9s;
         opacity: 0;
@@ -318,4 +354,3 @@ ul,li{list-style: none;}
         transform:translateY(0);
     }
 }
-
