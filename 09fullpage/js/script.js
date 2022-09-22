@@ -100,6 +100,24 @@ $(".btn-close").click(function(){
     $(".button").removeClass("active")
     $(".btn-close").removeClass("active")
 });
+
+
+$(".login").click(function(){
+    $(".popup").show()
+});
+$(".login-close").click(function(){
+    $(".popup").fadeOut();
+    console.log("ok")
+});
+
+$(".btnForm").hover(function(){
+    $(".btnForm a span").css("color","#fff")
+},function(){
+    $(".btnForm a span").css("color","#333")
+})
+
+
+
 // $(".btn_detail").hover(function(){
 //     $(".btn_detail").css("color","#fff");
 // },function(){
