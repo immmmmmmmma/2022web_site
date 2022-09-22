@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fullpage.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style01.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Serif+KR&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -20,6 +20,8 @@
     </style>
 
 </head>
+
+
 <body>
     <div id="header">
         <div class="navbar">
@@ -61,27 +63,82 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                        <i class="fa-solid fa-bars mIcon"></i>
-                        </a>
+                        <button class="btn button" type="button" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                          </button>
+                          
+                          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2" aria-labelledby="staticBackdropLabel">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src="img/ico_close_pop02.png" alt="" class="closePop">
+                            </button>
+                            <div class="offcanvas-body row">
+                                <div class="offBox col-12 col-md-6" style="background-image:url(img/menu.jpg)">
+                                </div>
+                                <div class="offBox col-12 col-md-6" style="background-color: rgb(0,68,56);">
+                                    <ul class="offTxt_wrap">
+                                        <li>
+                                            <a href="#">
+                                                <span class="offTxt oTit">Story</span>
+                                                <span class="offTxt">온실 이야기</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="offTxt oTit">Archive</span>
+                                                <span class="offTxt">온실 아카이브</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="offTxt oTit">Guide</span>
+                                                <span class="offTxt">온실 가이드</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="offTxt oTit">Care Program</span>
+                                                <span class="offTxt">케어 프로그램</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="offTxt oTit">Reservation</span>
+                                                <span class="offTxt">예약하기</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <img src="img/ci.png" alt="" class="ciImg">
+                                </div>
+                            </div>
+                          </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 
+
+
+
+
+
+
+
     <div id="fullpage">
         <!-- # 1 -->
-        <div class="section page1 active" data-anchor="1st">
-            <div class="wrap">
-                <div class="innerBox imgArea">
+        <div class="section page1 active " data-anchor="1st">
+            <div class="wrap row">
+                <div class="innerBox imgArea left col-12 col-md-6">
                     <div class="img" style="background-image:url(img/bg01.jpg)"></div>
                 </div>
-                <div class="innerBox textArea">
+                <div class="innerBox textArea right col-12 col-md-6">
                     <h2 class="f">MEET<br>MY<br>SELF</h2>
-                    <p>둘에서 셋, 첫 가족사진</p>
-                    <p>#가족사진촬영</p>
-                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <p class="tit">둘에서 셋, 첫 가족사진</p>
+                    <p class="tit">#가족사진촬영</p>
+                    <a href="#"></a>
+                    <a href="#" class="btn_detail f">DETAIL VIEW</a>
                     <span>scroll down</span>
                 </div>
             </div>
@@ -89,13 +146,13 @@
 
         <!-- # 2 -->
         <div class="section page2" data-anchor="2nd">
-            <div class="wrap">
-                <div class="innerBox textArea">
+            <div class="wrap row">
+                <div class="innerBox textArea left col-12 col-md-6">
                     <h2 class="f">HALF<br>MIRROR</h2>
                     <p>個人鏡觀<br>개인을 경험하는 <br> 거울 셀프 사진관</p>
-                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <a href="#" class="btn_detail f">DETAIL VIEW</a>
                 </div>
-                <div class="innerBox imgArea">
+                <div class="innerBox imgArea right col-12 col-md-6">
                     <div class="img" style="background-image:url(img/bg02.jpg)"></div>
                 </div>
             </div>
@@ -103,29 +160,29 @@
     
         <!-- # 3 -->
         <div class="section page3"  data-anchor="3rd">
-            <div class="wrap">
-                <div class="innerBox imgArea">
+            <div class="wrap row">
+                <div class="innerBox imgArea left col-12 col-md-6">
                     <div class="img" style="background-image:url(img/bg03.jpg)"></div>
                 </div>
-                <div class="innerBox textArea">
+                <div class="innerBox textArea right col-12 col-md-6">
                     <h2 class="f">LONG LIFE<br>PRODUCTS</h2>
                     <p>사진을 <br>
                         오래 간직할 수 있는</p>
-                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <a href="#" class="btn_detail f">DETAIL VIEW</a>
                 </div>
             </div>
         </div>
     
         <!-- # 4 -->
         <div class="section page4"  data-anchor="4th">
-            <div class="wrap">
-                <div class="innerBox textArea">
+            <div class="wrap row">
+                <div class="innerBox textArea left col-12 col-md-6">
                     <h2 class="f">GALLERY + <br>
                         BOOK STRORE</h2>
-                    <p>예술 작풍이<br>함께하는</p>
-                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <p>예술 작품이<br>함께하는</p>
+                    <a href="#" class="btn_detail f">DETAIL VIEW</a>
                 </div>
-                <div class="innerBox imgArea">
+                <div class="innerBox imgArea right col-12 col-md-6">
                     <div class="img" style="background-image:url(img/bg04.jpg)"></div>
                 </div>
             </div>
@@ -133,16 +190,16 @@
 
         <!-- $5 -->
         <div class="section page5"  data-anchor="5th">
-            <div class="wrap">
-                <div class="innerBox imgArea">
+            <div class="wrap row">
+                <div class="innerBox imgArea left col-12 col-md-6">
                     <div class="img" style="background-image:url(img/bg05.jpg)"></div>
                 </div>
-                <div class="innerBox textArea">
+                <div class="innerBox textArea right col-12 col-md-6">
                     <h2 class="f">ONSIL<br>
                         NEWS</h2>
                     <p>진행중인<br>
                         프로그램 안내</p>
-                    <a href="#" class="btn_detail">DETAIL VIEW</a>
+                    <a href="#" class="btn_detail f">DETAIL VIEW</a>
                 </div>
             </div>
         </div>
@@ -151,9 +208,9 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<script src="js/script01.js"></script>
 </body>
 </html>
