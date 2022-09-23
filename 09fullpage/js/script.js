@@ -1,3 +1,4 @@
+
 $("#fullpage").fullpage({
     anchors:["1st","2nd","3rd","4th","5th"],
     navigation:true,
@@ -91,6 +92,14 @@ $("#fullpage").fullpage({
         }
     }
 });
+// $(window).resize(function(){ 
+//     if (window.innerWidth > 480) { 
+    
+//     } else {
+    
+//     }
+    
+//     }).resize();
 
 $(".button").click(function(){
     $(".button").addClass("active")
@@ -103,11 +112,12 @@ $(".btn-close").click(function(){
 
 
 $(".login").click(function(){
-    $(".popup").show()
+    $(".popup").show();
+    console.log("in")
 });
 $(".login-close").click(function(){
     $(".popup").fadeOut();
-    console.log("ok")
+    console.log("out")
 });
 
 $(".btnForm").hover(function(){
