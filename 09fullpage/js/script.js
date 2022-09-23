@@ -12,10 +12,10 @@ $("#fullpage").fullpage({
             // $("body").css("background","rgb(0,68,56)")
             $(window).resize(function(){ 
                 if (window.innerWidth > 760) { 
-                    $("h2").css("color","#fff").css("font-size","72px")
+                    $("h2").css("color","#fff").css("font-size","72px").css("letter-spacing","30px")
                     $("p").css("color","#577e77").css("font-size","72px").css("line-height","100px").css("letter-spacing","18px")
                 } else {
-                    $("h2").css("color","#fff").css("font-size","36px")
+                    $("h2").css("color","#fff").css("font-size","36px").css("letter-spacing","30px")
                     $("p").css("color","#577e77").css("font-size","32px").css("line-height","50px").css("letter-spacing","18px")
                 }
                 }).resize();
@@ -36,11 +36,11 @@ $("#fullpage").fullpage({
             // $("body").css("background","rgb(248,232,193)")
             $(window).resize(function(){ 
                 if (window.innerWidth > 760) { 
-                    $("h2").css("color","#bca261")
-                    $("p").css("color","#333").css("font-size","36px").css("line-height","54px").css("letter-spacing","initial")
+                    $("h2").css("color","#bca261").css("font-size","72px").css("letter-spacing","30px")
+                    $("p").css("color","#333").css("font-size","36px").css("line-height","90px").css("letter-spacing","initial")
                     
                 } else {
-                    $("h2").css("color","#bca261")
+                    $("h2").css("color","#bca261").css("font-size","36px").css("letter-spacing","30px")
                     $("p").css("color","#333").css("font-size","18px").css("line-height","50px").css("letter-spacing","initial")
                 }
                 }).resize();
@@ -59,8 +59,15 @@ $("#fullpage").fullpage({
         if(index == 3){
 
             // $("body").css("background","rgb(149,150,106)")
-            $("h2").css("color","#fff")
-            $("p").css("color","#fff")
+            $(window).resize(function(){ 
+                if (window.innerWidth > 760) { 
+                    $("h2").css("color","#fff").css("letter-spacing","30px")
+                    $("p").css("color","#fff").css("font-size","36px").css("line-height","60px").css("letter-spacing","initial")
+                } else {
+                    $("h2").css("color","#fff").css("letter-spacing","10px")
+                    $("p").css("color","#fff").css("font-size","18px").css("line-height","50px").css("letter-spacing","initial")
+                }
+                }).resize();
             $(".page3").addClass("move")
             $(".page3 .wrap").addClass("move")
             $(".btn_detail").hover(function(){

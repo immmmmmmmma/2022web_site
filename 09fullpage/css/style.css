@@ -44,7 +44,7 @@ ul, li {
   align-items: center;
 }
 #header .navbar .menu li {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 #header .navbar .menu li .mIcon {
   font-size: 40px;
@@ -528,7 +528,18 @@ ul, li {
   transform: translateX(-50%);
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
 @media (max-width: 760px) {
+  .calinder {
+    display: none;
+  }
   .section .wrap .innerBox.textArea {
     padding: 30px;
   }
@@ -538,5 +549,10 @@ ul, li {
   .section .wrap .innerBox.textArea h2 {
     letter-spacing: 30px;
     line-height: 90px;
+  }
+  .section .wrap .innerBox.textArea .btn_detail {
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
