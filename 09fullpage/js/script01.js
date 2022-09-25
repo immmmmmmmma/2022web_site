@@ -105,5 +105,6 @@ $(".btn-close").click(function(){
 // },function(){
 //     $(".btn_detail:before").css("color","");
 // })
+// 
 
 
