@@ -19,13 +19,16 @@ ul,li{list-style: none;}
     .navbar{
         display: flex;
         align-items: center;
-        padding: 10px 20px;
+        padding: 10px 0 10px 20px;
         .menu{
             display: flex;
             justify-content: center;
             align-items: center;
             li{
                 margin-right: 30px;
+                &:last-child{
+                    margin-right: 0;
+                }
                 .mIcon{
                     font-size: 40px;
                     color: #fff;
@@ -82,7 +85,7 @@ ul,li{list-style: none;}
     --bs-offcanvas-width:100%;
     --bs-offcanvas-padding-x: 0;
     --bs-offcanvas-padding-y: 0;
-    transition: transform 1s ease-in-out;
+    transition:1s ease-in-out;
 }
 .offcanvas-backdrop{
         display: none;
@@ -123,8 +126,6 @@ ul,li{list-style: none;}
     position: absolute;
     top: 30px;
     right: 100px;
-    // top: 100px;
-    // right: 100px;
     outline: none;
     box-shadow:none;
     background: none;
@@ -153,6 +154,7 @@ ul,li{list-style: none;}
     left: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     .wrap{
         display: flex;
         align-items: center;
@@ -544,4 +546,153 @@ ul{
         right: 30px;
         bottom: 50px;
     }
+
+    @keyframes move1{
+        0%{
+            transform:translateY(0);
+        }
+        100%{
+            transform:translateY(0);
+        }
+    }
+    @keyframes move2{
+        0%{
+            transform:translateY(0);
+        }
+        100%{
+            transform:translateY(0);
+        }
+    }
+
+
+    .page1{
+        background: rgb(0,68,56);
+        z-index:-2;
+        
+        .wrap{
+            opacity: 1;
+            &.move{
+                opacity: 1;
+            }
+            .innerBox{
+                &.imgArea{
+                    order: 1;
+                }
+                &.textArea{
+                    order: 2;
+                    .scrollDown{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .page2{
+        background: rgb(248,232,193);
+        z-index:-2;
+        .wrap{
+            opacity: 1;
+            &.move{
+                opacity: 1;
+            }
+            .innerBox{
+                &.imgArea{
+                    order: 1;
+                }
+                &.textArea{
+                    order: 2;
+                }
+            }
+        }
+    }
+        
+    .page3{
+        background: rgb(149,150,106);
+        z-index:-2;
+        .wrap{
+            opacity: 1;
+            &.move{
+                opacity: 1;
+            }
+            .innerBox{
+                &.imgArea{
+                    order: 1;
+                }
+                &.textArea{
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .page4{
+        background: rgb(148,118,94);
+        z-index:-2;
+        .wrap{
+            opacity: 1;
+            &.move{
+                opacity: 1;
+            }
+            .innerBox{
+                &.imgArea{
+                    order: 1;
+                }
+                &.textArea{
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .page5{
+        background: rgb(27,40,76);
+        z-index:-2;
+        .wrap{
+            opacity: 1;
+            &.move{
+                opacity: 1;
+            }
+            .innerBox{
+                &.imgArea{
+                    order: 1;
+                }
+                &.textArea{
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    .offTxt_wrap{
+        .offTxt{
+            font-size: 18px;
+            &.oTit{
+                font-size: 36px;
+            }
+        }
+    }
+
+    .btn-close{
+        top: 100px;
+        right: 32px;
+    }
+    .offTxt_wrap {
+        padding: 20px 0 0 20px;
+    }
+    .offBox .ciImg {
+        right: 20px;
+        bottom: 20px;
+    }
+    .popup.login {
+        top: 120px;
+        .login-close{
+            top: -57px;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+
 }
