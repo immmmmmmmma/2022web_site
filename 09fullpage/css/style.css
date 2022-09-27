@@ -233,6 +233,10 @@ ul, li {
 .section .wrap .innerBox.textArea span {
   padding: 30px 0 0 0;
 }
+.section .wrap .innerBox.textArea .scrollDown {
+  position: absolute;
+  bottom: 69px;
+}
 
 .img {
   height: 100%;
@@ -681,7 +685,7 @@ ul {
     font-size: 36px;
   }
   .btn-close {
-    top: 100px;
+    top: 145px;
     right: 32px;
   }
   .offTxt_wrap {

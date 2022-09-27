@@ -219,6 +219,10 @@ ul,li{list-style: none;}
             span{
                 padding: 30px 0 0 0;
             }
+            .scrollDown{
+                position: absolute;
+                bottom: 69px;
+            }
         }
     }
 }
@@ -674,7 +678,7 @@ ul{
     }
 
     .btn-close{
-        top: 100px;
+        top: 145px;
         right: 32px;
     }
     .offTxt_wrap {
