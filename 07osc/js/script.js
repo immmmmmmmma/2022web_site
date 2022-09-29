@@ -76,32 +76,13 @@ $(".close").click(function(){
 $(".navbar>ul").clone().appendTo(".mMenu")
 
 
-// tab시 스크롤 이동 해보고 안되면 다시 복귀
 
+// $("downBtn").click(function(){
+//     teaData.sort(function(a,b){
+//         return a.price - b.price;
+//     });
 
-// let params = new URLSearchParams(location.search);
-// console.log(params.get("submenu"))
-
-
-// function tab(){
-//     $(".tab li").click(function(){
-//         let i = $(this).index();
-//         $(".tab li").removeClass("active");
-//         $(this).addClass("active")
-
-//         $(".content>div").hide().eq(i).show()
-//     })
-// }
-
-
-// function views(i){
-//     if( i != null){
-//         $(".tab li").removeClass("active").eq(i).addClass("active");
-//         $(".content>div").hide().eq(i).show();
-//         tab();
-//     }else{
-//         tab();
-//     }
-// }
-
-// views( params.get("submenu") ) 이휴
+//     let i=i++
+//     document.writeln(JSON.stringify(teaData[i]) + '<br>')
+    
+// });

@@ -646,6 +646,20 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     margin-right: 0;
 }
 
+/* sub01 */
+#contentPro li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+#contentPro li .wrap{
+width: 250px;
+}
+#contentPro li .wrap img{
+width: 100%;
+}
+
 
 /* sub02 */
 .bannerMain.sub{
