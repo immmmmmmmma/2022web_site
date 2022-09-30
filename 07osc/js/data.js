@@ -3,8 +3,8 @@ const teaData = [
         index:1,
         type:"티",
         title:"세작 40g",
-        img:"1.jpg",
-        // imgh:"1-1.jpg",
+        img:"1.png",
+        imgh:"1-1.png",
         price:"17,000",
         data:"2022.09.23"
     },
@@ -12,8 +12,8 @@ const teaData = [
         index:2,
         type:"티",
         title:"세작 80g",
-        img:"2.jpg",
-        // imgh:"2-2.jpg",
+        img:"2.png",
+        imgh:"2-2.png",
         price:"32,000",
         data:"2022.09.23"
     },
@@ -21,8 +21,8 @@ const teaData = [
         index:3,
         type:"티",
         title:"삼다연 제구영귤 30g",
-        img:"3.jpg",
-        // imgh:"3-3.jpg",
+        img:"3.png",
+        imgh:"3-3.png",
         price:"15,000",
         data:"2022.09.23"
     },
@@ -30,8 +30,8 @@ const teaData = [
         index:4,
         type:"티",
         title:"달빛걷기 35g",
-        img:"4.jpg",
-        // imgh:"4-4.jpg",
+        img:"4.png",
+        imgh:"4-4.png",
         price:"9,000",
         data:"2022.09.23"
     },
@@ -39,8 +39,8 @@ const teaData = [
         index:5,
         type:"티",
         title:"제주화산암차 30g",
-        img:"5.jpg",
-        // imgh:"5-5.jpg",
+        img:"5.png",
+        imgh:"5-5.png",
         price:"15,000",
         data:"2022.09.23"
     },
@@ -48,8 +48,8 @@ const teaData = [
         index:6,
         type:"티",
         title:"제주숲홍차 80g",
-        img:"6.jpg",
-        // imgh:"6-6.jpg",
+        img:"6.png",
+        imgh:"6-6.png",
         price:"40,000",
         data:"2022.09.23"
     },
@@ -57,8 +57,8 @@ const teaData = [
         index:7,
         type:"티",
         title:"우전 60g",
-        img:"7.jpg",
-        // imgh:"7-7.jpg",
+        img:"7.png",
+        imgh:"7-7.png",
         price:"70,000",
         data:"2022.09.23"
     },
@@ -66,8 +66,8 @@ const teaData = [
         index:8,
         type:"티",
         title:"삼다연 80g",
-        img:"8.jpg",
-        // imgh:"8-8.jpg",
+        img:"8.png",
+        imgh:"8-8.png",
         price:"40,000",
         data:"2022.09.23"
     },
@@ -75,8 +75,8 @@ const teaData = [
         index:9,
         type:"티",
         title:"일로향 60g",
-        img:"9.jpg",
-        // imgh:"9-9.jpg",
+        img:"9.png",
+        imgh:"9-9.png",
         price:"170,000",
         data:"2022.09.23"
     },
@@ -84,8 +84,8 @@ const teaData = [
         index:10,
         type:"티",
         title:"제주화산암차 50g",
-        img:"10.jpg",
-        // imgh:"10-10.jpg",
+        img:"10.png",
+        imgh:"10-10.png",
         price:"35,000",
         data:"2022.09.23"
     },
@@ -93,8 +93,8 @@ const teaData = [
         index:11,
         type:"티",
         title:"청우롱 50g",
-        img:"11.jpg",
-        // imgh:"11-11.jpg",
+        img:"11.png",
+        imgh:"11-11.png",
         price:"35,000",
         data:"2022.09.23"
     },
@@ -102,8 +102,8 @@ const teaData = [
         index:12,
         type:"티",
         title:"[2022년 햇차] 일로향 60g",
-        img:"12.jpg",
-        // imgh:"12-12.jpg",
+        img:"12.png",
+        imgh:"12-12.png",
         price:"170,000",
         data:"2022.09.23"
     },
@@ -111,8 +111,8 @@ const teaData = [
         index:13,
         type:"티",
         title:"월출향 60g",
-        img:"13.jpg",
-        // imgh:"13-13.jpg",
+        img:"13.png",
+        imgh:"13-13.png",
         price:"90,000",
         data:"2022.09.23"
     },
@@ -120,14 +120,44 @@ const teaData = [
         index:14,
         type:"티",
         title:"세작 선물세트",
-        img:"14.jpg",
-        // imgh:"14-14.jpg",
+        img:"14.png",
+        imgh:"14-14.png",
         price:"48,000",
         data:"2022.09.23"
     },
    
 ]
 
-export {teaData};
+const dessertData = [
+    {
+        index:1,
+        type:"디저트",
+        title:"랑그샤세트",
+        img:"1.png",
+        imgh:"1-1.png",
+        price:"48,000",
+        data:"2022.09.23"
+    },
+    {
+        index:1,
+        type:"디저트",
+        title:"랑그샤세트",
+        img:"1.png",
+        imgh:"1-1.png",
+        price:"48,000",
+        data:"2022.09.23"
+    },
+    {
+        index:1,
+        type:"디저트",
+        title:"랑그샤세트",
+        img:"1.png",
+        imgh:"1-1.png",
+        price:"48,000",
+        data:"2022.09.23"
+    },
+]
+
+export {teaData,dessertData};
 
 

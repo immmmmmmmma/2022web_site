@@ -137,28 +137,72 @@
         </div>
     </div>
 
-    <section class="contentWrap">
-        <div class="content">
-            <ul class="subMenuTab">
-                <li class="active">티제품</li>
-                <li>디저트</li>
-                <li>티세트</li>
-            </ul>
-            <div class="contentTitle">
-                <p>제품</p>
-                <div class="contentFnc">
-                    <a href="#">신상품</a>
-                    <a href="#">높은 가격순</a>
-                    <a href="#">낮은 가격순</a>
+
+    <div id="app">
+        <div class="teaSection">
+            <div class="tabMenu">
+                <h4>제품</h4>
+                <li @click="tab=1" v-bind:class="active:tab==1"><a href="">티 제품</a></li>
+                <li @click="tab=2" v-bind:class="active:tab==2"><a href="">티푸드</a></li>
+                <!-- <li @click="tab=3" :class="active:tab==3"><a href="">라이프 스타일</a></li> -->
+            </div>
+            <div class="container">
+                <div class="sortBar">
+                    <div class="sortMenu">
+                        <!-- <li><a href="">{{sortMenu}}</a></li> -->
+                        <li><a href="">신상품순</a></li>
+                        <li><a href="">높은 가격순</a></li>
+                        <li><a href="">낮은 가격순</a></li>
+                    </div>
+                </div>
+                <div id="goodsList">
+                    <ul v-if="tab==1">
+                        <h3>티제품</h3>
+                        <li v-for="(item,i) in teaData">
+                            <div class="wrap">
+                                <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                                <img v-bind:src="`images/tea/${item.imgh}`" alt="" class="img">
+                            </div>
+                            <span>{{item.title}}</span>
+                            <span>{{item.price}} 원</span>
+                        </li>
+                    </ul>
+                    <ul v-if="tab==2">
+                        <h3>디저트</h3>
+                        <li v-for="(item,i) in dessertData">
+                            <div class="wrap">
+                                <img v-bind:src="`images/dessert/${item.img}`" alt="" class="img">
+                                <img v-bind:src="`images/dessert/${item.imgh}`" alt="" class="img">
+                            </div>
+                            <span>{{item.title}}</span>
+                            <span>{{item.price}} 원</span>
+                        </li>
+                    </ul>
+                    <!-- <li v-for="(item,i) in dessertData">
+                        <div class="wrap">
+                            <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                        </div>
+                        <span>{{item.title}}</span>
+                        <span>{{item.price}} 원</span>
+                    </li> -->
                 </div>
             </div>
-            <ul id="contentPro">
-                <li v-for="(item,i) in teaData">
-                    <div class="wrap"><img v-bind:src="`images/tea/${item.img}`" alt="" class="img"></div>
-                    {{item.title}}
-                </li>
-            </ul>
         </div>
+    </div>
+
+
+
+
+
+            <!-- <ul id="app">
+                <li v-for="(item,i) in teaData">
+                    <div class="wrap">
+                        <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                    </div>
+                    <span>{{item.title}}</span>
+                    <span>{{item.price}} 원</span>
+                </li>
+            </ul> -->
     </section>
 
     <footer class="footerWrap">
@@ -193,17 +237,24 @@
 
     <script src="https://unpkg.com/vue@next"></script>
     <script type="module">
-        import { teaData } from "../js/data.js";
+        import { teaData, dessertData } from "./js/data.js";
         
-        const myView = {
+        const osc = {
             data(){
                 return {
+                    // sortMenu:[
+                    //     {menu:"신상품순",url:"http://www.naver.com"},
+                    //     {menu:"높은 가격순",url:"http://www.naver.com"},
+                    //     {menu:"낮은 가격순",url:"http://www.naver.com"},
+                    // ],
+                    tab:1,
                     teaData:teaData,
+                    dessertData:dessertData,
                 }
             }
         }
-        Vue.createApp(myView).mount("#contentPro")
+        Vue.createApp(osc).mount("#app")
     </script>
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
