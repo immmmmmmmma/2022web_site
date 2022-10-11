@@ -188,8 +188,12 @@
                         <img src="images/mo_visual_main03.jpg" alt="" class="mo_Vimg">
                       </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper_btn_next">
+                        <img src="images/main_next_btn.png" alt="">
+                    </div>
+                    <div class="swiper_btn_prev">
+                        <img src="images/main_prev_btn.png" alt="">
+                    </div>
                     <div class="swiper-pagination"></div>
                   </div>
             </div>
@@ -363,9 +367,13 @@
             //     el: ".swiper-pagination",
             //     clickable: true,
             // },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+        },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper_btn_next",
+                prevEl: ".swiper_btn_prev",
             },
         });
         </script>

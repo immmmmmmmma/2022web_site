@@ -786,6 +786,32 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.swiper_btn_next {
+    position: absolute;
+    top: 420px;
+    right: 235px;
+    z-index: 3;
+}
+.swiper_btn_prev {
+    position: absolute;
+    top: 420px;
+    left: 235px;
+    z-index: 3;
+}
+.swiper-horizontal>.swiper-pagination-progressbar{
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+:root {
+    --swiper-theme-color: #333;
+}
+
 /* locate */
 .locate{
     position: absolute;
