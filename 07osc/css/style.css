@@ -968,6 +968,9 @@ body{font-family: 'Gowun Dodum', sans-serif;}
         top: 360px;
         transform: translateX(-50%);
     }
+    .txtWrapV h2{
+        margin-bottom: 20px;        
+    }
     .txtWrapV .btnV{
         display: none;
     }
@@ -1116,7 +1119,58 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     .footerFnc li a{
         margin-right: 32px;
     }
+    
+    .swiper_btn_next,.swiper_btn_prev {
+        display: none;
+    }
+    .conRight li:nth-child(3) .txtWrap,.conRight li:nth-child(4) .txtWrap{
+        text-align: center;
+        color: #333;
+        margin-left: 40px;
+        text-shadow: 1px 1px 1px #fff;
+        /* position: absolute; */
 
+    }
+    .conRight li .free {
+        text-shadow: none;
+    }
+    .f30{font-size: 24px;}
+    .f24{font-size: 18px;}
+
+    .price .emp {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .conLeft li:nth-child(1){
+        padding: 40px;
+    }
+    .conLeft li:nth-child(1) h3{
+        text-align: center;
+    }
+    .conLeft li .price {
+        /* left: 103px;
+        bottom: 28px; */
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .conLeft li .price:after{
+        content: "";
+        width: 50px;
+        height: 1px;
+        background: #666;
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+    .conLeft li p {
+        /* bottom: 93px;
+        left: 127px; */
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 575px) {
