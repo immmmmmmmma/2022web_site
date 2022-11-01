@@ -667,6 +667,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 .contentWrap.sub{
     width: 1240px;
     margin: 0 auto;
+    /* margin-top: -170px; */
     /* display: flex; */
 }
 .tab.sub{
@@ -945,7 +946,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
         display: block;
     }
 
-    .visualWrap{
+    .visualWrap{WrapV
         width: 100vw;
         background-position: center;
         background-size: cover;
