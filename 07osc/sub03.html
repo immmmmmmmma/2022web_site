@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
 
 </head>
+
 <body>
     <header id="header">
         <div class="navbarWrap container">
@@ -93,7 +95,7 @@
                         <a href="#">
                             <img src="images/icon_moNav_white.png" alt="" class="white btnTw">
                             <img src="images/icon_moNav_black.png" alt="" class="black btnTb">
-                            
+
                         </a>
 
 
@@ -124,7 +126,7 @@
             <div class="mMenu">
 
 
-                
+
             </div>
         </div>
     </header>
@@ -137,7 +139,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="contentWrap sub">
         <ul class="tab sub">
             <li class="active colorfff f30">브랜드 소개</li>
@@ -187,7 +189,7 @@
                             <div><img src="images/H18.png" alt="17"></div>
                         </div>
                     </div>
-                
+
                 </div>
             </div>
         </div>
@@ -222,20 +224,50 @@
             </ul>
         </div>
     </footer>
-    
+
     <script>
-        setInterval(slideNum,3000);
-        let num = 0;
-        function slideNum(){
-            num++;
-            if(num == 18){
-                num = 1;
-                $(".slideWrap").css("left",0)
+        $(window).resize(function () {
+            if (window.innerWidth > 760) {
+
+                setInterval(slideNum, 3000);
+                let num = 0;
+                function slideNum() {
+                    num++;
+                    if (num == 18) {
+                        num = 1;
+                        $(".slideWrap").css("left", 0)
+                    }
+                    console.log(num)
+                    $(".slideWrap")
+                        .stop()
+                        .animate({ left: num * -500 }, 500)
+                }
+
+            } else {
+
+                setInterval(slideNum, 3000);
+                let num = 0;
+                function slideNum() {
+                    num++;
+                    if (num == 5) {
+                        num = 1;
+                        $(".slideWrap").css("left", 0)
+                    }
+                    console.log(num)
+                    $(".slideWrap")
+                        .stop()
+                        .animate({ left: num * -390 }, 390)
+                }
+
             }
-            console.log(num)
-            $(".slideWrap").stop().animate({left:num*-500},500)
-        }
+        }).resize();
+
+
+
+
+
     </script>
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
