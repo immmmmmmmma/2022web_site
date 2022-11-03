@@ -150,7 +150,7 @@
                     <div class="sortBar">
                         <div class="sortMenu">
                             <!-- <li><a href="">{{sortMenu}}</a></li> -->
-                            <li><a href="">신상품순</a></li>
+                            <li class="active"><a href="">신상품순</a></li>
                             <li><a href="">높은 가격순</a></li>
                             <li><a href="">낮은 가격순</a></li>
                         </div>
@@ -159,12 +159,14 @@
                         <ul v-if="tab==1">
                             <h3>티제품</h3>
                             <li v-for="(item,i) in teaData">
-                                <div class="wrap">
-                                    <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
-                                    <img v-bind:src="`images/tea/${item.imgh}`" alt="" class="img">
+                                <div class="dataWrap">
+                                    <div class="wrap">
+                                        <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                                        <img v-bind:src="`images/tea/${item.imgh}`" alt="" class="imgh">
+                                    </div>
+                                    <span>{{item.title}}</span>
+                                    <span>{{item.price}} 원</span>
                                 </div>
-                                <span>{{item.title}}</span>
-                                <span>{{item.price}} 원</span>
                             </li>
                         </ul>
                         <ul v-if="tab==2">

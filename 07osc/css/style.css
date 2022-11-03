@@ -648,6 +648,83 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 
 /* sub01 */
 
+.container{
+    position: relative;
+}
+.sortBar{
+    right: 0;
+    position: absolute;
+}
+.sortMenu{
+    display: flex;
+    align-items: center;
+}
+.sortMenu li{
+    margin-right: 20px;
+    position: relative;
+}
+.sortMenu li.active a{
+    color: #6C801A;
+    font-weight: 700;
+}
+.sortMenu li.active a:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #6C801A;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+.img{
+    width: 100%;
+}
+.imgh{
+    display: none;
+    width: 100%;
+}
+#goodsList>ul h3{
+    position: absolute;
+}
+#goodsList>ul{
+    transition:0.3s;
+    display: flex;
+    flex-wrap: wrap;
+}
+#goodsList ul li{
+    width: 310px !important;
+    position: relative;
+}
+#goodsList ul li:after{
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: #ccc;
+    position: absolute;
+    top: 50px;
+}
+#goodsList ul li:after:first-child{
+    display: none;
+}
+
+#goodsList ul li .dataWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#goodsList ul li:hover .imgh{
+    display: block;
+}
+#goodsList ul li:hover .img{
+    display: none;
+}
+#goodsList ul li{
+    width: 100%;
+}
+.dataWrap span{
+    align-self: flex-start;
+}
 
 
 /* sub02 */
