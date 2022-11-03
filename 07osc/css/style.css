@@ -647,10 +647,26 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 }
 
 /* sub01 */
-
+.teaSection{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
 .container{
     position: relative;
+    padding: 10px 0 0 0;
 }
+.tabMenu{
+    padding: 40px 60px 0 40px;
+    font-size: 18px;
+}
+.tabMenu h4{
+    margin-bottom: 30px;
+}
+.tabMenu li{
+    margin-bottom: 30px;
+}
+
 .sortBar{
     right: 0;
     position: absolute;
@@ -683,8 +699,26 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     display: none;
     width: 100%;
 }
+.goodsListWrap{
+    
+}
+#goodsList{
+    margin-top: 100px;
+}
+#goodsList:before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    top: 35px;
+    z-index: -1;
+
+}
 #goodsList>ul h3{
     position: absolute;
+    top: 10px;
+    font-weight: 500;
 }
 #goodsList>ul{
     transition:0.3s;
@@ -695,17 +729,12 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     width: 310px !important;
     position: relative;
 }
-#goodsList ul li:after{
-    width: 1px;
-    height: 100%;
-    content: "";
-    background: #ccc;
-    position: absolute;
-    top: 50px;
+
+.dataWrap{
+    border-right: 2px #f6f6f6 solid;
+    cursor: pointer;
 }
-#goodsList ul li:after:first-child{
-    display: none;
-}
+
 
 #goodsList ul li .dataWrap{
     display: flex;
@@ -724,6 +753,9 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 }
 .dataWrap span{
     align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 
