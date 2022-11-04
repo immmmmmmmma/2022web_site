@@ -202,6 +202,12 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     top: 280px;
     transform: translateX(-50%);
 }
+.exTxt{
+    display: block;
+}
+.exTxt_mo{
+    display: none;
+}
 .btnV{
     width: 150px;
     padding: 10px;
@@ -647,24 +653,52 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 }
 
 /* sub01 */
+.bannerMain{
+    width: 100%;
+}
+.bannerMain_mo{
+    display: none;
+}
 .teaSection{
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
-.container{
+.container.sub01{
     position: relative;
     padding: 10px 0 0 0;
+    margin-top: 100px;
 }
 .tabMenu{
+    margin-top: 80px;
     padding: 40px 60px 0 40px;
     font-size: 18px;
+}
+.tabMenu_mo{
+    display: none;
 }
 .tabMenu h4{
     margin-bottom: 30px;
 }
+.tabMenu_mo li,
 .tabMenu li{
-    margin-bottom: 30px;
+    padding: 40px 20px;
+    margin-bottom: 2px;
+    background: #6C801A;
+}
+.tabMenu_mo li a,
+.tabMenu li a{
+    color: #fff;
+}
+.tabMenu_mo li.active,
+.tabMenu li.active{
+    background: #fff;
+}
+
+.tabMenu_mo li.active a,
+.tabMenu li.active a{
+    color: #6C801A;
+    font-weight: 500;
 }
 
 .sortBar{
@@ -689,7 +723,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     height: 3px;
     background: #6C801A;
     position: absolute;
-    bottom: -4px;
+    bottom: -14px;
     left: 0;
 }
 .img{
@@ -698,9 +732,6 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 .imgh{
     display: none;
     width: 100%;
-}
-.goodsListWrap{
-    
 }
 #goodsList{
     margin-top: 100px;
@@ -711,7 +742,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     height: 3px;
     background: #ddd;
     position: absolute;
-    top: 35px;
+    top: 45px;
     z-index: -1;
 
 }
@@ -735,6 +766,16 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     cursor: pointer;
 }
 
+.priceWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.priceWrap span{
+    text-align: center;
+}
+
 
 #goodsList ul li .dataWrap{
     display: flex;
@@ -752,9 +793,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     width: 100%;
 }
 .dataWrap span{
-    align-self: flex-start;
-    margin-left: 40px;
-    margin-bottom: 20px;
+    padding: 10px 0;
     font-size: 20px;
 }
 
@@ -1104,13 +1143,23 @@ body{font-family: 'Gowun Dodum', sans-serif;}
         width: 100%;
         height: 100%;
     }
+
+    .exTxt{
+        display: none;
+    }
+    .exTxt_mo{
+        display: block;
+    }
+    .txtWrapV.mo{
+        top: 310px;
+    }
     .txtWrapV{
-        padding: 0 0 0 40px;
+        padding: 0 0 0 45px;
         position: absolute;
         display: flex;
         flex-direction: column;
         left: 50%;
-        top: 360px;
+        top: 335px;
         transform: translateX(-50%);
     }
     .txtWrapV h2{
@@ -1119,6 +1168,10 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     .txtWrapV .btnV{
         display: none;
     }
+    .swiper-horizontal>.swiper-pagination-progressbar{
+        top: 550px;
+    }
+
     #section{
         margin: 0 auto;
     }
@@ -1180,12 +1233,86 @@ body{font-family: 'Gowun Dodum', sans-serif;}
 /* subscribe */
     .subscribeWrap{
         width: 100%;
+        margin-bottom: 0;
     }
     .subscribe{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
     }
+
+    /* sub01 */
+    .bannerMain.sub01{
+        display: none;
+    }
+    .bannerMain_mo{
+        display: block;
+    }
+    .bannerMain_mo img{
+        width: 100vw;
+    }
+
+    .teaSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tabMenu{
+        display: none;
+    }
+    .tabMenu_mo{
+        display: flex;
+        padding: 20px 60px;
+        font-size: 18px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .tabMenu_mo li{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .tabMenu_mo li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container.sub01{
+        margin-top: 0;
+    }
+    #goodsList>ul h3{
+        padding: 0 0 0 30px;
+    }
+
+    .priceWrap{
+        width: 180px;
+        overflow: hidden;
+        white-space: hidden ;
+    }
+    #goodsList ul li{
+        width: 100% !important;
+    }
+    #goodsList ul li .dataWrap{
+        display: flex;
+        flex-direction: row;
+    } 
+    .wrap{
+        width: 50%;
+    }
+    .dataWrap{
+        padding: 20px 0;
+        border-right: none;
+        border-top: 2px #f6f6f6 solid;
+    }
+    .dataWrap span{
+        font-size: 16px;
+    }
+
+    .wrap img{
+        width: 50%;
+    }
+
 
     /* sub02 */
     .bannerMain.sub{
