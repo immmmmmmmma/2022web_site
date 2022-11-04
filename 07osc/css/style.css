@@ -663,6 +663,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    margin-bottom: 100px;
 }
 .container.sub01{
     position: relative;
@@ -1257,6 +1258,7 @@ body{font-family: 'Gowun Dodum', sans-serif;}
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 0;
     }
     .tabMenu{
         display: none;
