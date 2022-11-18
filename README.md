@@ -9,3 +9,4 @@
 1. osc https://immmmmmmmma.github.io/2022web_site/07osc
 1. boots https://immmmmmmmma.github.io/2022web_site/08boot
 1. fullpage https://immmmmmmmma.github.io/2022web_site/09fullpage
+1. parallax https://immmmmmmmma.github.io/2022web_site/parallax
