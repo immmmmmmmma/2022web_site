@@ -137,14 +137,17 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide_main">
-                            <div class="txtWrapV container">
-                                <h2 class="mb40px color333 f36 fontsNotoS">
+                            <div class="txtWrapV container mo">
+                                <h2 class="mb40px color333 f36 fontsNotoS exTxt">
                                     간단하게 타 먹는 가루 콤부차,<br>
                                     갈라망고 맛 런칭
                                 </h2>
+                                <h2 class="mb40px color333 f36 fontsNotoS exTxt_mo">
+                                    간단하게 타 먹는<br> 가루 콤부차,<br> 갈라망고 맛 런칭
+                                </h2>
                                 <p class="mb100px color666 fontsNotoS">
                                     달콤한 망고와 새콤한 깔라만시가 블렌딩 된<br>
-                                    나를 위한 맛있는 건강 습관 콤부차를 만나보세요!
+                                    나를 위한 맛있는 습관 콤부차를 만나보세요!
                                 </p>
                                 <div class="btnV">
                                     <a href="#" class=" color333 fontsNotoS">이벤트 전체보기</a>
@@ -185,11 +188,15 @@
                                 </div>
                             </div>
                         <img src="images/visaul03_web.png" alt="" class="pc_Vimg">
-                        <img src="images/mo_visual_main03.jpg" alt="" class="mo_Vimg">
+                        <img src="images/mo_visual_main03.png" alt="" class="mo_Vimg">
                       </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper_btn_next">
+                        <img src="images/main_next_btn.png" alt="">
+                    </div>
+                    <div class="swiper_btn_prev">
+                        <img src="images/main_prev_btn.png" alt="">
+                    </div>
                     <div class="swiper-pagination"></div>
                   </div>
             </div>
@@ -209,7 +216,7 @@
                         <span class="priA f24 fw700 fontsNotoS">9,000원</span>
                     </div>
                 </li>
-                <li style="background-image: url(images/main_content04.png);">4</li>
+                <li style="background-image: url(images/main_content04.png);"></li>
             </ul>
             <ul class="conRight">
                 <li style="background-image: url(images/main_content02.png);">
@@ -363,9 +370,13 @@
             //     el: ".swiper-pagination",
             //     clickable: true,
             // },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+        },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper_btn_next",
+                prevEl: ".swiper_btn_prev",
             },
         });
         </script>

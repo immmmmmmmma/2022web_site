@@ -131,14 +131,18 @@
 
     <div class="visualWrap">
         <div class="visual">
-            <div class="bannerMain">
+            <div class="bannerMain sub01">
                 <img src="images/banner_teaprod.jpg" alt="">
+            </div>
+            <div class="bannerMain_mo">
+                <img src="images/banner_m_teaprod.jpg" alt="">
             </div>
         </div>
     </div>
 
 
     <div class="teaSection">
+<<<<<<< HEAD
         <div id="app">
             <div class="tabMenu">
                 <h4>제품</h4>
@@ -153,47 +157,77 @@
                         <li><a href="">신상품순</a></li>
                         <li><a href="">높은 가격순</a></li>
                         <li><a href="">낮은 가격순</a></li>
-                    </div>
-                </div>
-                <div id="goodsList">
-                    <ul v-if="tab==1">
-                        <h3>티제품</h3>
-                        <li v-for="(item,i) in teaData">
-                            <div class="wrap">
-                                <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
-                                <img v-bind:src="`images/tea/${item.imgh}`" alt="" class="img">
-                            </div>
-                            <span>{{item.title}}</span>
-                            <span>{{item.price}} 원</span>
-                        </li>
-                    </ul>
-                    <ul v-if="tab==2">
-                        <h3>디저트</h3>
-                        <li v-for="(item,i) in dessertData">
-                            <div class="wrap">
-                                <img v-bind:src="`images/dessert/${item.img}`" alt="" class="img">
-                                <img v-bind:src="`images/dessert/${item.imgh}`" alt="" class="img">
-                            </div>
-                            <span>{{item.title}}</span>
-                            <span>{{item.price}} 원</span>
-                        </li>
-                    </ul>
-                    <!-- <li v-for="(item,i) in dessertData">
-                        <div class="wrap">
-                            <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+=======
+        <div class="tabMenu">
+            <li class="tab active" @click="tab=1" :class="active:tab==1"><a href="#">티<br>제<br>품</a></li>
+            <li class="tab" @click="tab=2" :class="active:tab==2"><a href="#">티<br>푸<br>드</a></li>
+            <li class="tab" @click="tab=3" :class="active:tab==3"><a href="">티<br>레<br>시<br>피 </a></li>
+        </div>
+        <div class="tabMenu_mo">
+            <li class="tab active" @click="tab=1" :class="active:tab==1"><a href="#">티제품</a></li>
+            <li class="tab" @click="tab=2" :class="active:tab==2"><a href="#">티푸드</a></li>
+            <li class="tab" @click="tab=3" :class="active:tab==3"><a href="#">티 레시피 </a></li>
+        </div>
+        <div id="app">
+                <div class="container sub01">
+                    <div class="sortBar">
+                        <div class="sortMenu">
+                            <!-- <li><a href="">{{sortMenu}}</a></li> -->
+                            <li class="active"><a href="">신상품순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
                         </div>
-                        <span>{{item.title}}</span>
-                        <span>{{item.price}} 원</span>
-                    </li> -->
+                    </div>
+                    <div class="goodsListWrap">
+                        <div id="goodsList">
+                            <ul v-if="tab==1" :tab="tab">
+                                <h3>티제품</h3>
+                                <li v-for="(item,i) in teaData">
+                                    <div class="dataWrap">
+                                        <div class="wrap">
+                                            <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                                            <img v-bind:src="`images/tea/${item.imgh}`" alt="" class="imgh">
+                                        </div>
+                                        <div class="priceWrap">
+                                            <span>{{item.title}}</span>
+                                            <span>{{item.price}} 원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul v-if="tab==2" :tab="tab">
+                                <h3>디저트</h3>
+                                <li v-for="(item,i) in dessertData">
+                                    <div class="wrap">
+                                        <img v-bind:src="`images/dessert/${item.img}`" alt="" class="img">
+                                        <img v-bind:src="`images/dessert/${item.imgh}`" alt="" class="img">
+                                    </div>
+                                    <span>{{item.title}}</span>
+                                    <span>{{item.price}} 원</span>
+                                </li>
+                            </ul>
+                            <!-- <li v-for="(item,i) in dessertData">
+                                <div class="wrap">
+                                    <img v-bind:src="`images/tea/${item.img}`" alt="" class="img">
+                                </div>
+                                <span>{{item.title}}</span>
+                                <span>{{item.price}} 원</span>
+                            </li> -->
+                        </div>
+>>>>>>> 05b1904d3b7e23f8177b07e83bd6e8449da23d5f
+                    </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>  
 
 
 
 
 
+=======
+>>>>>>> 05b1904d3b7e23f8177b07e83bd6e8449da23d5f
 
             <!-- <ul id="app">
                 <li v-for="(item,i) in teaData">
@@ -240,14 +274,10 @@
     <script type="module">
         import { teaData, dessertData } from "./js/data.js";
         
+
         const osc = {
             data(){
                 return {
-                    // sortMenu:[
-                    //     {menu:"신상품순",url:"http://www.naver.com"},
-                    //     {menu:"높은 가격순",url:"http://www.naver.com"},
-                    //     {menu:"낮은 가격순",url:"http://www.naver.com"},
-                    // ],
                     tab:1,
                     teaData:teaData,
                     dessertData:dessertData,
